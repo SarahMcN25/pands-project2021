@@ -1,11 +1,19 @@
-# This is program which analysis' Fisher's Iris data set
+# This is a program which analysis' Ronald Fisher's Iris data set
 # Author: Sarah McNelis
 
-# PROGRESS ON PROJECT
-# MAPPED A PLAN OF HOW PROG SHOULD MAYBE GO?
-# NEXT STEP WRITING CODE!!! 
+#https://en.wikipedia.org/wiki/Iris_flower_data_set
+#https://en.wikipedia.org/wiki/Ronald_Fisher
 
-#download iris data set
+# PROGRESS ON PROJECT
+# MAPPED A PLAN OF HOW PROG SHOULD GO
+# NEXT STEP ADD MORE CODE
+# START WITH READING IN CSV FILE - divide data into the 3 species
+# THEN ANALYSISING DATA (VARIABLES HERE)
+# WRITING TO TEXT FILE
+# NEXT HISTOGRAM OF ALL VARIABLES
+# FINALLY SCATTER PLOT OF VARIABLES 
+
+#downloaded iris data set
 #https://www.kaggle.com/saurabh00007/iriscsv
 
 # import modeules, numpy, malplotlib, 
@@ -24,6 +32,7 @@ with open(filename) as f: #default as reading mode
 
 # Give description of dataset
 print (f.describe())
+# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
 
 ## or open like below
 
@@ -67,7 +76,7 @@ average = float(sum(z)) / len(z)
 #               import math
 
 # var 5 = highest value of a list max()
-'''
+
 ######### 3 
 # OUTPUT SUMMERARY OF VAR 1-5 INTO ONE TXT FILE
 with open("summary.txt", "wt") as f:
@@ -103,8 +112,10 @@ plt.legend(loc='best', fontsize='large')
 plt.savefig('hist 1   .png')
 # have commented this out. can only either show or save. can't do both at same time.
 
-
-
+DataFrame.hist() # plots the histograms of the columns on multiple subplots:
+data.hist(by=np.random.randint(0, 4, 1000), figsize=(6, 4)) 
+#The by keyword can be specified to plot grouped histograms:#
+###### https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html 
 
 ######### 5 
 #var 1-5 scatter each
@@ -132,6 +143,11 @@ plt.savefig('scatter 1   .png')
 
 # this plot all together??
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html
+# https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html #scatter matrix see below
+df = pd.DataFrame(np.random.randn(1000, 4), columns=["a", "b", "c", "d"])
+scatter_matrix(df, alpha=0.2, figsize=(6, 6), diagonal="kde")
+
+
 pd.plotting.scatter_matrix(f)
 plt.show()
 '''
