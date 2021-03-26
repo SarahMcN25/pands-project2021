@@ -9,11 +9,14 @@
 #https://www.kaggle.com/saurabh00007/iriscsv
 
 # import modeules, numpy, malplotlib, 
+import numpy as np 
+import matplotlib as plt 
+import math 
 
 ##### 1
 # open csv file here for reading
 # pandas here? view extra lecture to check
-filename = 
+filename = 'iris.csv'
 with open(filename) as f: #default as reading mode
     f.read()
 
@@ -31,6 +34,7 @@ df.head()
 #               is this possible sarah????
 #               https://www.w3schools.com/python/module_statistics.asp
 #               statistics.mean()	Calculates the mean (average) of the given data
+average = float(sum(numbers)) / len(numbers)
 
 
 # var 3 = sum of widhts/ lenghts?
@@ -48,6 +52,47 @@ df.head()
 #########4
 # histo, scatter and text file summary for each variable. 
 #var1-5 histo each 
+## https://www.w3schools.com/python/matplotlib_histograms.asp
+xpoints = np.array()
+ypoints = np.array()
+
+font1 = {'family':'times new roman','color':'tab:red','size':30, 'weight':'bold', 'style':'oblique'}
+font2 = {'family': 'times new roman', 'color':'indianred', 'size':20, 'weight':'semibold'}
+font3 = {'family': 'times new roman', 'color':'slategrey', 'size':20, 'weight':'semibold'}
+# creating fonts here for title and axis labels
+# playing with font styles, color, sixe and weight
+
+plt.hist(xpoints, ypoints1)
+
+plt.xlabel('', fontdict=font2) #use fontdict to call fonts above
+plt.ylabel('', fontdict=font3)
+plt.title('', fontdict=font1, loc='center') #loc points to where title will appear on plot
+plt.legend(loc='best', fontsize='large') 
+plt.show()
+#plt.savefig('hist 1   .png')
+# have commented this out. can only either show or save. can't do both at same time.
+
+
+
 
 ######### 5 
 #var 1-5 scatter each
+#  https://www.w3schools.com/python/matplotlib_scatter.asp
+xpoints = np.array()
+ypoints = np.array()
+
+font1 = {'family':'times new roman','color':'tab:red','size':30, 'weight':'bold', 'style':'oblique'}
+font2 = {'family': 'times new roman', 'color':'indianred', 'size':20, 'weight':'semibold'}
+font3 = {'family': 'times new roman', 'color':'slategrey', 'size':20, 'weight':'semibold'}
+# creating fonts here for title and axis labels
+# playing with font styles, color, sixe and weight
+
+plt.scatter(xpoints, ypoints1)
+
+plt.xlabel('', fontdict=font2) #use fontdict to call fonts above
+plt.ylabel('', fontdict=font3)
+plt.title('', fontdict=font1, loc='center') #loc points to where title will appear on plot
+plt.legend(loc='best', fontsize='large') 
+plt.show()
+#plt.savefig('scatter 1   .png')
+# have commented this out. can only either show or save. can't do both at same time.
