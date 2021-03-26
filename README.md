@@ -5,7 +5,7 @@
 
 &nbsp; #gives spacce
 
-## **REFERENCES AND RESOURCES USED:** #big heading 
+## **REFERENCES:** #big heading 
 ### - 
-# 1.**WEEKLYTASK02-BMI.PY** #bold
+# 1.**heading** #bold
 # > for quote

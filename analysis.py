@@ -48,6 +48,10 @@ average = float(sum(numbers)) / len(numbers)
 
 ######### 3 
 # OUTPUT SUMMERARY OF VAR 1-5 INTO ONE TXT FILE
+with open("summary.txt", "wt") as f:
+    f.write("", file=f)
+
+
 
 #########4
 # histo, scatter and text file summary for each variable. 
@@ -68,8 +72,8 @@ plt.xlabel('', fontdict=font2) #use fontdict to call fonts above
 plt.ylabel('', fontdict=font3)
 plt.title('', fontdict=font1, loc='center') #loc points to where title will appear on plot
 plt.legend(loc='best', fontsize='large') 
-plt.show()
-#plt.savefig('hist 1   .png')
+# plt.show()
+plt.savefig('hist 1   .png')
 # have commented this out. can only either show or save. can't do both at same time.
 
 
