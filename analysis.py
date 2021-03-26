@@ -10,7 +10,8 @@
 
 # import modeules, numpy, malplotlib, 
 import numpy as np 
-import matplotlib as plt 
+import matplotlib as plt
+import pandas as pd 
 import math 
 
 ##### 1
@@ -20,10 +21,29 @@ filename = 'iris.csv'
 with open(filename) as f: #default as reading mode
     f.read()
 
+
+# Give description of dataset
+print (f.describe())
+
+## or open like below
+
+iris = pd.read_csv('Iris.csv') # to view the data # 
+iris.head()    
+
+iris['Species'].value_counts()  # Generate a sample from each species #  
+
+# append species to list.
+assign each species to x y z 
+
 # to view column headings
 # https://towardsdatascience.com/a-beginners-guide-to-data-analysis-in-python-188706df5447
 # fyi sepal is green part of flower/bud after steam before petals 
-df.head()
+
+print(iris.head()) # Overview of Species Distribution from the  start #
+print(iris.tail()) # Overview of Species Distribution from the end #
+
+print(iris.shape) # prints shape of dataset
+
 
 ####### 2 VARIABLES
 # how many variables?
@@ -34,8 +54,10 @@ df.head()
 #               is this possible sarah????
 #               https://www.w3schools.com/python/module_statistics.asp
 #               statistics.mean()	Calculates the mean (average) of the given data
-average = float(sum(numbers)) / len(numbers)
 
+average = float(sum(x)) / len(x)
+average = float(sum(y)) / len(y)
+average = float(sum(z)) / len(z)
 
 # var 3 = sum of widhts/ lenghts?
 #           math.fsum()	Returns the sum of all items in any iterable (tuples, arrays, lists, etc.) 
@@ -45,11 +67,13 @@ average = float(sum(numbers)) / len(numbers)
 #               import math
 
 # var 5 = highest value of a list max()
-
+'''
 ######### 3 
 # OUTPUT SUMMERARY OF VAR 1-5 INTO ONE TXT FILE
 with open("summary.txt", "wt") as f:
-    f.write("", file=f)
+    f.write(str(summary, file=f)
+    pd.set_option("display precision", 2) #to set everything to display 2 decimal places
+
 
 
 
@@ -57,6 +81,9 @@ with open("summary.txt", "wt") as f:
 # histo, scatter and text file summary for each variable. 
 #var1-5 histo each 
 ## https://www.w3schools.com/python/matplotlib_histograms.asp
+## https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/ 
+## https://realpython.com/python-histograms/ 
+
 xpoints = np.array()
 ypoints = np.array()
 
@@ -82,6 +109,8 @@ plt.savefig('hist 1   .png')
 ######### 5 
 #var 1-5 scatter each
 #  https://www.w3schools.com/python/matplotlib_scatter.asp
+## https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/
+## https://pythonspot.com/matplotlib-scatterplot/ 
 xpoints = np.array()
 ypoints = np.array()
 
@@ -97,6 +126,12 @@ plt.xlabel('', fontdict=font2) #use fontdict to call fonts above
 plt.ylabel('', fontdict=font3)
 plt.title('', fontdict=font1, loc='center') #loc points to where title will appear on plot
 plt.legend(loc='best', fontsize='large') 
-plt.show()
-#plt.savefig('scatter 1   .png')
+#plt.show()
+plt.savefig('scatter 1   .png')
 # have commented this out. can only either show or save. can't do both at same time.
+
+# this plot all together??
+# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html
+pd.plotting.scatter_matrix(f)
+plt.show()
+'''
