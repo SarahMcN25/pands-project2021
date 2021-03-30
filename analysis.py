@@ -31,6 +31,8 @@ x, y, z = species
 ##### 1
 # open file here for reading
 # pandas here? view extra lecture to check 
+### maybe need to use pandas to read columns??
+
 filename = 'iris.data'
 with open(filename, encoding="utf-8") as f: #default as reading mode
     data = f.read().describe()

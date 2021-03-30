@@ -1,5 +1,6 @@
 # to test small sections of my analysis code
 # not for final submittion
+import pandas as pf
 
 species = ()
 
@@ -15,7 +16,8 @@ columns = []
 
 with open(iris, encoding="utf-8") as f: #default as reading mode
     data = f.read()
-    columns.append(data)
+    df.info() #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
+   # columns.append(data)
     
 #print(columns)
 
