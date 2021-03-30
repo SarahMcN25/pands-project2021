@@ -25,7 +25,7 @@
 # eg of how to add screensnip by pushing png file to repository
 ## https://www.foxinfotech.in/2019/12/github-markdown-add-an-image-to-readme-md-file.html#:~:text=1%20Add%20an%20existing%20Image%20to%20README.md%20file,...%203%20Add%20an%20Image%20from%20External%20Resource
 
-# ![eg.](picexample.png = 100x25)
+# ![eg.](picexample.png)
 
 
 ## **REFERENCES:** #big heading 
