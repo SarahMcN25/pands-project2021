@@ -10,16 +10,23 @@
 # > for quote
 
 
-## **Introduction**
-#### brief intro. maybe some pics of flowers? look up markdown syntax
+## **Introduction** here 
+#### brief intro. maybe some pics? ## note to self - look up markdown syntax on how to do this
 
-## explain different **variables**
+## para here to explain different **variables**
 
 
-## explain ** writing to text file**
+## new para here to explain ** writing to text file**
 
-## explain **histogram of each variable**
+## new para here to explain **histogram of each variable**
 
-## explain ** scatter for each variable**
+## new para here to explain ** scatter for each variable**
+
+# eg of how to add screensnip https://www.foxinfotech.in/2019/12/github-markdown-add-an-image-to-readme-md-file.html#:~:text=1%20Add%20an%20existing%20Image%20to%20README.md%20file,...%203%20Add%20an%20Image%20from%20External%20Resource
+
+# ![eg.](picexample.png)
+
+
+
 
 ## **REFERENCES:** #big heading 

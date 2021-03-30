@@ -17,7 +17,7 @@ columns = []
 with open(iris, encoding="utf-8") as f: #default as reading mode
     data = f.read()
     df.info() #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
-   # columns.append(data)
+   # columns.append(data);pul
     
 #print(columns)
 
