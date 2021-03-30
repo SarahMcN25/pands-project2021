@@ -29,8 +29,8 @@ import math
 species = ()
 x, y, z = species
 ##### 1
-# open csv file here for reading
-# pandas here? view extra lecture to check
+# open file here for reading
+# pandas here? view extra lecture to check 
 filename = 'iris.data'
 with open(filename, encoding="utf-8") as f: #default as reading mode
     data = f.read().describe()
@@ -63,7 +63,6 @@ iris['Species'].value_counts()  # Generate a sample from each species #
 print(iris.head()) # Overview of Species Distribution from the  start #
 print(iris.tail()) # Overview of Species Distribution from the end #
 print(iris.shape) # prints shape of dataset
-
 
 ####### 2 VARIABLES
 # how many variables?

@@ -9,15 +9,15 @@ species = ()
 iris = 'iris.data'
 
 columns = []
-x = columns[1]
+
 
 #columns = ['sepallength','sepalwidth','petallength','petalwidth','typeofspecies']
 
 with open(iris, encoding="utf-8") as f: #default as reading mode
-    data = f.readline()
+    data = f.read()
     columns.append(data)
     
-print(x)
+#print(columns)
 
 '''
 print("columns",iris.columns)
