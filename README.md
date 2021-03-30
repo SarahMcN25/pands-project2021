@@ -27,8 +27,5 @@
 
 # ![eg.](picexample.png)
 
-#### or can do using url
-# ! [url eg](https://www.bing.com/images/search?view=detailV2&ccid=o3OsMz9V&id=A207DA7A4594220B7F3B937206C0A0D5A2CC3CCB&thid=OIP.o3OsMz9V1Zn40wMhSZ6mzgHaHa&mediaurl=https%3a%2f%2fwww.backgroundscool.com%2fwp-content%2fuploads%2f2019%2f12%2fcrop-4-15.jpg&exph=1280&expw=1280&q=unicorn&simid=608000264893312110&ck=50D0601AA4BE097B807330C1EF956688&selectedIndex=3&FORM=IRPRST&ajaxhist=0)
-
 
 ## **REFERENCES:** #big heading 
