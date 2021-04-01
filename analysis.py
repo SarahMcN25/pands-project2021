@@ -6,9 +6,10 @@ import matplotlib as plt
 import pandas as pd 
 import math 
 
-filename = 'iris.data'
-with open(filename, encoding="utf-8") as f: #default as reading mode
-    data = f.read()
-    df = pd.DataFrame(data)
-    print(df)
-    print(df.describe())
+filename = 'iris.data' # !!!!!!! thinks first row is columns.... need to fix this SARAH!!!!!! 
+df = pd.read_table(filename) #open the file and read the table
+#print(df)
+#rint(df.head(5)) #prints first 5 rows from top
+#print(df.tail(7))
+#print(df.shape) #prints shape of data set
+print(df.describe()) #gives brief analysis
