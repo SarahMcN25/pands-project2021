@@ -41,6 +41,6 @@ minvalues = df.min()
 maxvalues = df.max()
 #print(maxvalues)
 
-column1 = df.count(axis=0) # gives the mean of each column??
-column1= df.mean()
-print(column1)
+# 'Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width'
+df.plot.scatter(x= meanvalues, y=sumvalues)
+plt.show()
