@@ -6,16 +6,28 @@ import matplotlib as plt
 import pandas as pd 
 import math 
 
-filename = 'iris.data' # !!!!!!! thinks first row is columns.... need to fix this SARAH!!!!!! 
-df = pd.read_table(filename) #open the file and read the table
-print(df)
-#rint(df.head(5)) #prints first 5 rows from top
-#print(df.tail(7))
+
+filename = 'iris.csv' 
+df = pd.read_csv(filename) #open and read csv file 
+
+#print(df)
+print(df.head()) #prints top 5 rows 
+#print(df.tail(7)) #prints last 7 rows 
 #print(df.shape) #prints shape of data set
-#print(df.describe()) #gives brief analysis
+#print(df.describe()) #gives brief analysis #<<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>>
+#print(df.info()) #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
+
+
+# var 1 = how many species - do scatter plot for this
+species = df['Species'].value_counts()  #gives count of each species
+print(species)                          # <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
+
+
+
+
 '''
 # to get mean of column
-meanvalues = df.groupby('sepellenght').mean()
+meanvalues = df.columns('Sepal Lenght').mean()
 print(meanvalues)
 
 sumvalues = df.groupby('sepellenght').sum()
