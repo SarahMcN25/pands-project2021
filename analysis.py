@@ -11,7 +11,7 @@ filename = 'iris.csv'
 df = pd.read_csv(filename) #open and read csv file 
 
 #print(df)
-print(df.head()) #prints top 5 rows 
+#print(df.head()) #prints top 5 rows 
 #print(df.tail(7)) #prints last 7 rows 
 #print(df.shape) #prints shape of data set
 #print(df.describe()) #gives brief analysis #<<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>>
@@ -20,25 +20,27 @@ print(df.head()) #prints top 5 rows
 
 # var 1 = how many species - do scatter plot for this
 species = df['Species'].value_counts()  #gives count of each species
-print(species)                          # <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
+#print(species)                          # <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
 
+# var 2 - Mean of all columns 
+# <<https://www.statology.org/mean-of-column-pandas/>>
+# <<https://www.w3schools.com/python/module_math.asp>>
+meanvalues = df.mean()
+#print(meanvalues)
 
+# var 3 - sum of each column ### need to figure out how to omit the species column for these
+#sum of widhts/ lenghts?
+sumvalues = df.sum() 
+#print(sumvalues)
 
+# var 4 - lowest value for each column
+minvalues = df.min()
+#print(minvalues)
 
-'''
-# to get mean of column
-meanvalues = df.columns('Sepal Lenght').mean()
-print(meanvalues)
+# var 5 - highest value for each column
+maxvalues = df.max()
+#print(maxvalues)
 
-sumvalues = df.groupby('sepellenght').sum()
-print(sumvalues)
-
-minvalues = df.groupby('sepellenght').min()
-print(minvalues)
-
-maxvalues = df.groupby('sepellenght').max()
-print(maxvalues)
-
-# maybe create a function for each - mean, sum, min etc and then call function for each column???
-# might be neater and less code???? Think about it!
-''' 
+column1 = df.count(axis=0) # gives the mean of each column??
+column1= df.mean()
+print(column1)
