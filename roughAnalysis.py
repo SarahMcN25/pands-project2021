@@ -1,53 +1,7 @@
 #https://en.wikipedia.org/wiki/Iris_flower_data_set
 #https://en.wikipedia.org/wiki/Ronald_Fisher
 
-# PROGRESS ON PROJECT
-# MAPPED A PLAN OF HOW PROG SHOULD GO
-# NEXT STEP ADD MORE CODE
-# START WITH READING IN CSV FILE - divide data into the 3 species
-# THEN ANALYSISING DATA (VARIABLES HERE)
-# WRITING TO TEXT FILE
-# NEXT HISTOGRAM OF ALL VARIABLES
-# FINALLY SCATTER PLOT OF VARIABLES 
-
-#downloaded csv iris data set
-#https://www.kaggle.com/saurabh00007/iriscsv
-
-#downloaded .data @
-#http://archive.ics.uci.edu/ml/datasets/Iris 
-# http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
-
-
-####### 2 VARIABLES 
-# need to figure out how to select just one column groupby isn't working
-'''
-# to get mean of column
-meanvalues = df.groupby('Sepal Lenght').mean()
-print(meanvalues)
-
-sumvalues = df.groupby('sepellenght').sum()
-print(sumvalues)
-
-minvalues = df.groupby('sepellenght').min()
-print(minvalues)
-
-maxvalues = df.groupby('sepellenght').max()
-print(maxvalues)
-''' 
-
-# var 2 = average/mean of first 10? or las 10? or random 10? of first 10 petal lenghts ?
-#               maybe vs sepal lenghts? and maybe same for widths??
-#               <<https://www.w3schools.com/python/module_statistics.asp>>
-#               statistics.mean()	Calculates the mean (average) of the given data
-######### 3 
-# OUTPUT SUMMERARY OF VAR 1-5 INTO ONE TXT FILE
-with open("summary.txt", "wt") as f:
-    f.write(str(summary, file=f)
-    pd.set_option("display precision", 2) #to set everything to display 2 decimal places
-
-#########4
-# histo, scatter and text file summary for each variable. 
-#var1-5 histo each 
+# HISTOS
 ## https://www.w3schools.com/python/matplotlib_histograms.asp
 ## https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/ 
 ## https://realpython.com/python-histograms/ 
@@ -76,8 +30,7 @@ data.hist(by=np.random.randint(0, 4, 1000), figsize=(6, 4))
 #The by keyword can be specified to plot grouped histograms:#
 ###### https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html 
 
-######### 5 
-#var 1-5 scatter each
+# SCATTERS
 #  https://www.w3schools.com/python/matplotlib_scatter.asp
 ## https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/
 ## https://pythonspot.com/matplotlib-scatterplot/ 
@@ -109,5 +62,3 @@ scatter_matrix(df, alpha=0.2, figsize=(6, 6), diagonal="kde")
 
 pd.plotting.scatter_matrix(f)
 plt.show()
-'''
-

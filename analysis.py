@@ -5,6 +5,11 @@ import numpy as np
 import matplotlib as plt
 import pandas as pd 
 
+#downloaded csv iris data set
+#https://www.kaggle.com/saurabh00007/iriscsv
+#downloaded .data @
+#http://archive.ics.uci.edu/ml/datasets/Iris 
+# http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
 
 filename = pd.read_csv('iris.csv')
 df = pd.DataFrame(filename)
@@ -50,12 +55,27 @@ maxvirginica = df[df['Species'] == 'virginica'].max()
 # (df[df['Species'] == 'setosa'].describe(), file=f)
 # [df['Species'] == 'versicolor'].describe(), file=f)
 # (df[df['Species'] == 'virginica'].describe(), file=f)
+# 'Sepal Length'
+# 'Sepal Width'
+# 'Petal Lenght'
+# 'Petal Width'
+# 'Species'
 
-maxvalues = df.groupby(["Sepal Length"])[['Petal Length']].mean()
-print(maxvalues)
+petalwidthmean = df.groupby(['Species'])[['Petal Width']].mean()
+print(petalwidthmean)
+
+petallenghtmean =df.groupby(['Species'])[['Petal Length']].mean()
+print(petallenghtmean)
+
+sepalwidthmean = df.groupby(['Species'])[['Sepal Width']].mean()
+print(sepalwidthmean)
+
+sepallenghtmean =df.groupby(['Species'])[['Sepal Length']].mean()
+print(sepallenghtmean)
 
 
-'''
+
+
 # SUMMARY TO TXT FILE
 with open ('summary.txt', 'wt') as f:
     f.write('The Iris Dataset: Statistics Summary of all Species\n')
@@ -78,7 +98,7 @@ with open ('summary.txt', 'wt') as f:
     print(df[df['Species'] == 'versicolor'].head(6), file=f)
 
 
-
+'''
 
 
 x = minvalues
