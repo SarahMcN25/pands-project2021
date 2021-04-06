@@ -6,32 +6,18 @@ import matplotlib as plt
 import pandas as pd 
 
 
-filename = 'iris.csv' 
-df = pd.read_csv(filename) #open and read csv file 
+filename = pd.read_csv('iris.csv')
+df = pd.DataFrame(filename)
+
+'''
+filename = 'iris.csv'
+df = pf.read_csv(filename)
+'''
 #print(df)
 #print(df.head()) #prints top 5 rows 
 #print(df.tail(7)) #prints last 7 rows 
 
 #print(df.info(), file=f) #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
-
-
-# WRITE TO SUMMARY HERE#
-with open ('summary.txt', 'w') as f:
-    f.write('The Iris Dataset: Statistics Summary of all Species\n')
-    print(df.describe(), file=f) #gives brief analysis #<<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>>
-    f.write('\nStactistics Summary of Iris-Setosa Species:\n',)
-    print(df[df['Species'] == 'setosa'].describe(), file=f)
-    f.write('\nStactistics Summary of Iris-Versicolor Species:\n')
-    print(df[df['Species'] == 'versicolor'].describe(), file=f)
-    f.write('\nStactistics Summary of Iris-Virginica Species:\n')
-    print(df[df['Species'] == 'virginica'].describe(), file=f)
-    f.write('\nShape of Iris Dataset:\n',)
-    print(df.shape, file=f) #prints shape of data set
-    f.write('\nFirst 5 rows of the Iris Dataset:\n')
-    print(df.head(5), file=f)#
-    f.write('\nLast 7 rows of the Iris Dataset:\n')
-    print(df.tail(7), file=f)
-
 
 # var 1 = how many species - do scatter plot for this
 species = df['Species'].value_counts()  #gives count of each species
@@ -53,9 +39,48 @@ minvalues = df.min()
 #print(minvalues)
 
 # var 5 - highest value for each column
-maxvalues = df.max()
+#maxvalues = df.max()
 #print(maxvalues)
+
+# max of each column of each species
+maxsetosa = df[df['Species'] == 'setosa'].max()
+maxversicolor = df[df['Species'] == 'versicolor'].max()
+maxvirginica = df[df['Species'] == 'virginica'].max()
+#print(maxsetosa, maxversicolor, maxvirginica)
+# (df[df['Species'] == 'setosa'].describe(), file=f)
+# [df['Species'] == 'versicolor'].describe(), file=f)
+# (df[df['Species'] == 'virginica'].describe(), file=f)
+
+maxvalues = df.groupby(["Sepal Length"])[['Petal Length']].mean()
+print(maxvalues)
+
+
 '''
+# SUMMARY TO TXT FILE
+with open ('summary.txt', 'wt') as f:
+    f.write('The Iris Dataset: Statistics Summary of all Species\n')
+    print(df.describe(), file=f) #gives brief analysis #<<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>>
+    f.write('\nStactistics Summary of Iris-Setosa Species:\n',)
+    print(df[df['Species'] == 'setosa'].describe(), file=f)
+    f.write('\nStactistics Summary of Iris-Versicolor Species:\n')
+    print(df[df['Species'] == 'versicolor'].describe(), file=f)
+    f.write('\nStactistics Summary of Iris-Virginica Species:\n')
+    print(df[df['Species'] == 'virginica'].describe(), file=f)
+    f.write('\nShape of Iris Dataset:\n',)
+    print(df.shape, file=f) #prints shape of data set
+    f.write('\nFirst 5 rows of the Iris Dataset:\n')
+    print(df.head(5), file=f)
+    f.write('\nLast 7 rows of the Iris Dataset:\n')
+    print(df.tail(7), file=f)
+    f.write('\nCount of different Species\n')
+    print(species, file=f) 
+    f.write('\nMiddle Species\n')
+    print(df[df['Species'] == 'versicolor'].head(6), file=f)
+
+
+
+
+
 x = minvalues
 y = maxvalues
 
