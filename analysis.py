@@ -5,19 +5,24 @@ import numpy as np
 import matplotlib as plt
 import pandas as pd 
 
+# <<https://realpython.com/pandas-groupby/>>
+# Use 1 decimal places in output display
+pd.set_option("display.precision", 1)
+# Don't wrap repr(DataFrame) across additional lines
+pd.set_option("display.expand_frame_repr", False)
+
 #downloaded csv iris data set
 #https://www.kaggle.com/saurabh00007/iriscsv
 #downloaded .data @
 #http://archive.ics.uci.edu/ml/datasets/Iris 
 # http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
-
+'''
 filename = pd.read_csv('iris.csv')
 df = pd.DataFrame(filename)
-
 '''
 filename = 'iris.csv'
 df = pf.read_csv(filename)
-'''
+
 #print(df)
 #print(df.info(), file=f) 
 #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
@@ -45,11 +50,12 @@ minvalues = df.min()
 #maxvalues = df.max()
 #print(maxvalues)
 
-# max of each column of each species
-maxsetosa = df[df['Species'] == 'setosa'].max()
-maxversicolor = df[df['Species'] == 'versicolor'].max()
-maxvirginica = df[df['Species'] == 'virginica'].max()
+# mean of each column of each species
+meansetosa = df[df['Species'] == 'setosa'].mean()
+meanversicolor = df[df['Species'] == 'versicolor'].mean()
+meanvirginica = df[df['Species'] == 'virginica'].mean()
 #print(maxsetosa'\n', maxversicolor'n', maxvirginica)
+#print(maxsetosa)
 
 #<<https://realpython.com/pandas-groupby/>>
 
@@ -64,14 +70,14 @@ sepallenghtcount =df.groupby(['Species'])[['Sepal Length']].count()
 #print(sepallenghtcount)
 
 # VAR 2 - mean()
-petalwidthmean = df.groupby(['Species'])[['Petal Width']].mean()
-#print(petalwidthmean)
 sepalwidthmean = df.groupby(['Species'])[['Sepal Width']].mean()
 #print(sepalwidthmean)
-petallenghtmean =df.groupby(['Species'])[['Petal Length']].mean()
-#print(petallenghtmean)
 sepallenghtmean =df.groupby(['Species'])[['Sepal Length']].mean()
 #print(sepallenghtmean)
+petalwidthmean = df.groupby(['Species'])[['Petal Width']].mean()
+#print(petalwidthmean)
+petallengthmean =df.groupby(['Species'])[['Petal Length']].mean()
+#print(petallengthmean)
 
 # VAR 3 - std()
 petalwidthstd = df.groupby(['Species'])[['Petal Width']].std()
@@ -103,6 +109,16 @@ petallenghtmax =df.groupby(['Species'])[['Petal Length']].max()
 sepallenghtmax =df.groupby(['Species'])[['Sepal Length']].max()
 #print(sepallenghtmax)
 
+# NEED TO WORK ON THIS NEXT!!!
+x = sepal width # need to make into list/array
+y = count 
+df.plot(kind='scatter', x, y)
+plt.show()
+
+
+
+
+
 
 # SUMMARY TO TXT FILE 
 # <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> 
@@ -130,5 +146,4 @@ with open ('summary.txt', 'wt') as f:
     print(df[df['Species'] == 'versicolor'].head(), file=f)         # prints top 6 rows of versicolor
     f.write('\nFirst 3 Rows of the Iris Virginica Species:\n')
     print(df[df['Species'] == 'virginica'].head(3), file=f)         # prints top 3 rows of virginica
-
-
+    
