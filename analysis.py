@@ -11,23 +11,26 @@ df = pd.read_csv(filename) #open and read csv file
 #print(df)
 #print(df.head()) #prints top 5 rows 
 #print(df.tail(7)) #prints last 7 rows 
-#print(df.shape) #prints shape of data set
-#f.write(df.info()) #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
+
+#print(df.info(), file=f) #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
 
 
 # WRITE TO SUMMARY HERE#
 with open ('summary.txt', 'w') as f:
-    f.write('The Iris Dataset: Statistics Summary\n')
+    f.write('The Iris Dataset: Statistics Summary of all Species\n')
     print(df.describe(), file=f) #gives brief analysis #<<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>>
-    print('\nStactistics Summary of Iris-Setosa', file=f)
+    f.write('\nStactistics Summary of Iris-Setosa Species:\n',)
     print(df[df['Species'] == 'setosa'].describe(), file=f)
-    print('\nStactistics Summary of Iris-Versicolor', file=f)
+    f.write('\nStactistics Summary of Iris-Versicolor Species:\n')
     print(df[df['Species'] == 'versicolor'].describe(), file=f)
-    print('\nStactistics Summary of Iris-Virginica', file=f)
+    f.write('\nStactistics Summary of Iris-Virginica Species:\n')
     print(df[df['Species'] == 'virginica'].describe(), file=f)
-
-    #print(df.head(5), file=f)
-
+    f.write('\nShape of Iris Dataset:\n',)
+    print(df.shape, file=f) #prints shape of data set
+    f.write('\nFirst 5 rows of the Iris Dataset:\n')
+    print(df.head(5), file=f)#
+    f.write('\nLast 7 rows of the Iris Dataset:\n')
+    print(df.tail(7), file=f)
 
 
 # var 1 = how many species - do scatter plot for this
