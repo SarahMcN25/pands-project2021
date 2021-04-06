@@ -22,7 +22,8 @@ df = pf.read_csv(filename)
 #print(df.head()) #prints top 5 rows 
 #print(df.tail(7)) #prints last 7 rows 
 
-#print(df.info(), file=f) #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
+#print(df.info(), file=f) 
+#<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
 
 # var 1 = how many species - do scatter plot for this
 species = df['Species'].value_counts()  #gives count of each species
@@ -61,6 +62,7 @@ maxvirginica = df[df['Species'] == 'virginica'].max()
 # 'Petal Width'
 # 'Species'
 
+#<<https://realpython.com/pandas-groupby/>>
 petalwidthmean = df.groupby(['Species'])[['Petal Width']].mean()
 print(petalwidthmean)
 
@@ -74,28 +76,30 @@ sepallenghtmean =df.groupby(['Species'])[['Sepal Length']].mean()
 print(sepallenghtmean)
 
 
-
-
 # SUMMARY TO TXT FILE
 with open ('summary.txt', 'wt') as f:
     f.write('The Iris Dataset: Statistics Summary of all Species\n')
     print(df.describe(), file=f) #gives brief analysis #<<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>>
-    f.write('\nStactistics Summary of Iris-Setosa Species:\n',)
-    print(df[df['Species'] == 'setosa'].describe(), file=f)
-    f.write('\nStactistics Summary of Iris-Versicolor Species:\n')
-    print(df[df['Species'] == 'versicolor'].describe(), file=f)
-    f.write('\nStactistics Summary of Iris-Virginica Species:\n')
-    print(df[df['Species'] == 'virginica'].describe(), file=f)
+    f.write('\nCount of Different Species:\n')
+    print(species, file=f) 
     f.write('\nShape of Iris Dataset:\n',)
     print(df.shape, file=f) #prints shape of data set
+    f.write('\nStatistical Summary of Iris Setosa Species:\n',)
+    print(df[df['Species'] == 'setosa'].describe(), file=f)
+    f.write('\nStatistical Summary of Iris Versicolor Species:\n')
+    print(df[df['Species'] == 'versicolor'].describe(), file=f)
+    f.write('\nStatistical Summary of Iris Virginica Species:\n')
+    print(df[df['Species'] == 'virginica'].describe(), file=f)
     f.write('\nFirst 5 rows of the Iris Dataset:\n')
     print(df.head(5), file=f)
     f.write('\nLast 7 rows of the Iris Dataset:\n')
     print(df.tail(7), file=f)
-    f.write('\nCount of different Species\n')
-    print(species, file=f) 
-    f.write('\nMiddle Species\n')
-    print(df[df['Species'] == 'versicolor'].head(6), file=f)
+    f.write('\nFirst 6 Rows of Iris Versicolor Species:\n')
+    print(df[df['Species'] == 'versicolor'].head(), file=f)
+    f.write('\nLast 4 Rows of Iris Setosa Species:\n')
+    print(df[df['Species'] == 'setosa'].tail(4), file=f)
+    f.write('\nFirst 3 Rows of the Iris Virginica Species:\n')
+    print(df[df['Species'] == 'virginica'].head(3), file=f)
 
 
 '''
