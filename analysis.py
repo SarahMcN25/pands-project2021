@@ -19,15 +19,12 @@ filename = 'iris.csv'
 df = pf.read_csv(filename)
 '''
 #print(df)
-#print(df.head()) #prints top 5 rows 
-#print(df.tail(7)) #prints last 7 rows 
-
 #print(df.info(), file=f) 
 #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
 
-# var 1 = how many species - do scatter plot for this
 species = df['Species'].value_counts()  #gives count of each species
-#print(species)                          # <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
+#print(species)  
+# <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
 
 # var 2 - Mean of all columns 
 # <<https://www.statology.org/mean-of-column-pandas/>>
@@ -52,69 +49,86 @@ minvalues = df.min()
 maxsetosa = df[df['Species'] == 'setosa'].max()
 maxversicolor = df[df['Species'] == 'versicolor'].max()
 maxvirginica = df[df['Species'] == 'virginica'].max()
-#print(maxsetosa, maxversicolor, maxvirginica)
-# (df[df['Species'] == 'setosa'].describe(), file=f)
-# [df['Species'] == 'versicolor'].describe(), file=f)
-# (df[df['Species'] == 'virginica'].describe(), file=f)
-# 'Sepal Length'
-# 'Sepal Width'
-# 'Petal Lenght'
-# 'Petal Width'
-# 'Species'
+#print(maxsetosa'\n', maxversicolor'n', maxvirginica)
 
 #<<https://realpython.com/pandas-groupby/>>
+
+# VAR 1 - count()
+petalwidthcount = df.groupby(['Species'])[['Petal Width']].count()
+#print(petalwidthcount)
+sepalwidthcount = df.groupby(['Species'])[['Sepal Width']].count()
+#print(sepalwidthcount)
+petallenghtcount =df.groupby(['Species'])[['Petal Length']].count()
+#print(petallenghtcount)
+sepallenghtcount =df.groupby(['Species'])[['Sepal Length']].count()
+#print(sepallenghtcount)
+
+# VAR 2 - mean()
 petalwidthmean = df.groupby(['Species'])[['Petal Width']].mean()
-print(petalwidthmean)
-
-petallenghtmean =df.groupby(['Species'])[['Petal Length']].mean()
-print(petallenghtmean)
-
+#print(petalwidthmean)
 sepalwidthmean = df.groupby(['Species'])[['Sepal Width']].mean()
-print(sepalwidthmean)
-
+#print(sepalwidthmean)
+petallenghtmean =df.groupby(['Species'])[['Petal Length']].mean()
+#print(petallenghtmean)
 sepallenghtmean =df.groupby(['Species'])[['Sepal Length']].mean()
-print(sepallenghtmean)
+#print(sepallenghtmean)
+
+# VAR 3 - std()
+petalwidthstd = df.groupby(['Species'])[['Petal Width']].std()
+#print(petalwidthstd)
+sepalwidthstd = df.groupby(['Species'])[['Sepal Width']].std()
+#print(sepalwidthstd)
+petallenghtstd =df.groupby(['Species'])[['Petal Length']].std()
+#print(petallenghtstd)
+sepallenghtstd =df.groupby(['Species'])[['Sepal Length']].std()
+#print(sepallenghtstd)
+
+# VAR 4 - min()
+petalwidthmin = df.groupby(['Species'])[['Petal Width']].min()
+#print(petalwidthmin)
+sepalwidthmin = df.groupby(['Species'])[['Sepal Width']].min()
+#print(sepalwidthmin)
+petallenghtmin =df.groupby(['Species'])[['Petal Length']].min()
+#print(petallenghtmin)
+sepallenghtmin =df.groupby(['Species'])[['Sepal Length']].min()
+#print(sepallenghtmin)
+
+# VAR 5 - max()
+petalwidthmax = df.groupby(['Species'])[['Petal Width']].max()
+#print(petalwidthmax)
+sepalwidthmax = df.groupby(['Species'])[['Sepal Width']].max()
+#print(sepalwidthmax)
+petallenghtmax =df.groupby(['Species'])[['Petal Length']].max()
+#print(petallenghtmax)
+sepallenghtmax =df.groupby(['Species'])[['Sepal Length']].max()
+#print(sepallenghtmax)
 
 
-# SUMMARY TO TXT FILE
+# SUMMARY TO TXT FILE 
+# <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> 
+# <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>>
 with open ('summary.txt', 'wt') as f:
     f.write('The Iris Dataset: Statistics Summary of all Species\n')
-    print(df.describe(), file=f) #gives brief analysis #<<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>>
+    print(df.describe(), file=f)                                    #gives brief analysis of all 
     f.write('\nCount of Different Species:\n')
-    print(species, file=f) 
+    print(species, file=f)                                          # counts number of species
     f.write('\nShape of Iris Dataset:\n',)
-    print(df.shape, file=f) #prints shape of data set
+    print(df.shape, file=f)                                         # prints shape of data set
     f.write('\nStatistical Summary of Iris Setosa Species:\n',)
-    print(df[df['Species'] == 'setosa'].describe(), file=f)
+    print(df[df['Species'] == 'setosa'].describe(), file=f)         # prints summary of setosa
     f.write('\nStatistical Summary of Iris Versicolor Species:\n')
-    print(df[df['Species'] == 'versicolor'].describe(), file=f)
+    print(df[df['Species'] == 'versicolor'].describe(), file=f)     # prints summary of versicolor      
     f.write('\nStatistical Summary of Iris Virginica Species:\n')
-    print(df[df['Species'] == 'virginica'].describe(), file=f)
+    print(df[df['Species'] == 'virginica'].describe(), file=f)      # prints summary of virginica
     f.write('\nFirst 5 rows of the Iris Dataset:\n')
-    print(df.head(5), file=f)
+    print(df.head(5), file=f)                                       # pinrts top 5 rows
     f.write('\nLast 7 rows of the Iris Dataset:\n')
-    print(df.tail(7), file=f)
-    f.write('\nFirst 6 Rows of Iris Versicolor Species:\n')
-    print(df[df['Species'] == 'versicolor'].head(), file=f)
+    print(df.tail(7), file=f)                                       # prints last 7 rows
     f.write('\nLast 4 Rows of Iris Setosa Species:\n')
-    print(df[df['Species'] == 'setosa'].tail(4), file=f)
+    print(df[df['Species'] == 'setosa'].tail(4), file=f)            # prints last 4 rows of setosa
+    f.write('\nFirst 6 Rows of Iris Versicolor Species:\n')
+    print(df[df['Species'] == 'versicolor'].head(), file=f)         # prints top 6 rows of versicolor
     f.write('\nFirst 3 Rows of the Iris Virginica Species:\n')
-    print(df[df['Species'] == 'virginica'].head(3), file=f)
+    print(df[df['Species'] == 'virginica'].head(3), file=f)         # prints top 3 rows of virginica
 
 
-'''
-
-
-x = minvalues
-y = maxvalues
-
-
-# 'Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width'
-df.plot.scatter(meanvalues, maxvalues)
-plt.show()
-
-# To generate a Scatterplot using pandas #
-
-df.plot(kind="scatter" , x="Sepal Lenght" , y="Sepal Width")
-plt.show()
-'''

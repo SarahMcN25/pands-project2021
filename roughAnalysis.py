@@ -1,6 +1,24 @@
 #https://en.wikipedia.org/wiki/Iris_flower_data_set
 #https://en.wikipedia.org/wiki/Ronald_Fisher
 
+'''
+
+
+x = minvalues
+y = maxvalues
+
+
+# 'Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width'
+df.plot.scatter(meanvalues, maxvalues)
+plt.show()
+
+# To generate a Scatterplot using pandas #
+
+df.plot(kind="scatter" , x="Sepal Lenght" , y="Sepal Width")
+plt.show()
+'''
+
+
 # HISTOS
 ## https://www.w3schools.com/python/matplotlib_histograms.asp
 ## https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/ 
