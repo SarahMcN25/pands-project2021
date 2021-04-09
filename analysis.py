@@ -146,9 +146,10 @@ plt.show()
 '''
 # HISTO 1: COUTNS
 #SEPAL WIDTH VS PETAL WIDTH OF 3 SPECIES 
-x1 = sepalwidthcount
-x2 = petalwidthcount
 
+
+# This bit works but not what I want
+# Need to think how to do each variable?? 
 plt.figure()
 df.plot.scatter(x='Sepal Length', y='Sepal Width')
 plt.show()
