@@ -10,9 +10,9 @@ min             4.3          2.0           1.0          0.1
 max             7.9          4.4           6.9          2.5
 
 Count of Different Species:
-setosa        50
-virginica     50
 versicolor    50
+virginica     50
+setosa        50
 Name: Species, dtype: int64
 
 Shape of Iris Dataset:
