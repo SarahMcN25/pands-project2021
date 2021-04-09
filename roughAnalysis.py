@@ -1,6 +1,42 @@
 #https://en.wikipedia.org/wiki/Iris_flower_data_set
 #https://en.wikipedia.org/wiki/Ronald_Fisher
 
+#### alternative way of opening file 
+## not sure which way is better or more advised? need to look up
+filename = 'iris.csv'
+df = pd.read_csv(filename)
+
+
+##### dont think i need this.....
+
+# mean of each column of each species
+meansetosa = df[df['Species'] == 'setosa'].mean()
+meanversicolor = df[df['Species'] == 'versicolor'].mean()
+meanvirginica = df[df['Species'] == 'virginica'].mean()
+#print(maxsetosa'\n', maxversicolor'n', maxvirginica)
+#print(maxsetosa)
+
+##### or this
+# var 2 - Mean of all columns 
+# <<https://www.statology.org/mean-of-column-pandas/>>
+# <<https://www.w3schools.com/python/module_math.asp>>
+meanvalues = df.mean()
+#print(meanvalues)
+
+# var 3 - sum of each column ### need to figure out how to omit the species column for these
+#sum of widhts/ lenghts?
+sumvalues = df.sum() 
+#print(sumvalues)
+
+# var 4 - lowest value for each column
+minvalues = df.min()
+#print(minvalues)
+
+# var 5 - highest value for each column
+#maxvalues = df.max()
+#print(maxvalues)
+
+
 
 # HISTOS
 ## https://www.w3schools.com/python/matplotlib_histograms.asp

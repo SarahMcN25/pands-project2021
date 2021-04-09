@@ -5,6 +5,16 @@
 
 &nbsp; #gives spacce
 
+
+# downloaded csv iris data set
+# https://www.kaggle.com/saurabh00007/iriscsv
+# downloaded .data @
+# http://archive.ics.uci.edu/ml/datasets/Iris 
+# http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
+
+
+
+
 ### - 
 # 1.**heading** #bold
 # > for quote

@@ -12,51 +12,17 @@ pd.set_option("display.precision", 1)
 # Don't wrap repr(DataFrame) across additional lines
 pd.set_option("display.expand_frame_repr", False)
 
-#downloaded csv iris data set
-#https://www.kaggle.com/saurabh00007/iriscsv
-#downloaded .data @
-#http://archive.ics.uci.edu/ml/datasets/Iris 
-# http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
-
 filename = pd.read_csv('iris.csv')
 df = pd.DataFrame(filename)
-
-#filename = 'iris.csv'
-#df = pd.read_csv(filename)
 
 #print(df)
 #print(df.info(), file=f) 
 #<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
 
 species = df['Species'].value_counts()  #gives count of each species
-#print(species)  
+#print(species)  #debug
 # <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
 
-# var 2 - Mean of all columns 
-# <<https://www.statology.org/mean-of-column-pandas/>>
-# <<https://www.w3schools.com/python/module_math.asp>>
-meanvalues = df.mean()
-#print(meanvalues)
-
-# var 3 - sum of each column ### need to figure out how to omit the species column for these
-#sum of widhts/ lenghts?
-sumvalues = df.sum() 
-#print(sumvalues)
-
-# var 4 - lowest value for each column
-minvalues = df.min()
-#print(minvalues)
-
-# var 5 - highest value for each column
-#maxvalues = df.max()
-#print(maxvalues)
-
-# mean of each column of each species
-meansetosa = df[df['Species'] == 'setosa'].mean()
-meanversicolor = df[df['Species'] == 'versicolor'].mean()
-meanvirginica = df[df['Species'] == 'virginica'].mean()
-#print(maxsetosa'\n', maxversicolor'n', maxvirginica)
-#print(maxsetosa)
 
 # SUMMARY TO TXT FILE 
 # <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> 
@@ -90,53 +56,53 @@ with open ('summary.txt', 'wt') as f:
 
 # VAR 1 - count()
 petalwidthcount = df.groupby(['Species'])[['Petal Width']].count()
-#print(petalwidthcount)
+#print(petalwidthcount) #debug
 sepalwidthcount = df.groupby(['Species'])[['Sepal Width']].count()
-#print(sepalwidthcount)
+#print(sepalwidthcount) #debug
 petallenghtcount =df.groupby(['Species'])[['Petal Length']].count()
-#print(petallenghtcount)
+#print(petallenghtcount) #debug
 sepallenghtcount =df.groupby(['Species'])[['Sepal Length']].count()
-#print(sepallenghtcount)
+#print(sepallenghtcount) #debug
 
 # VAR 2 - mean()
 sepalwidthmean = df.groupby(['Species'])[['Sepal Width']].mean()
-#print(sepalwidthmean)
+#print(sepalwidthmean) #debug
 sepallenghtmean =df.groupby(['Species'])[['Sepal Length']].mean()
-#print(sepallenghtmean)
+#print(sepallenghtmean) #debug
 petalwidthmean = df.groupby(['Species'])[['Petal Width']].mean()
-#print(petalwidthmean)
+#print(petalwidthmean) #debug
 petallengthmean =df.groupby(['Species'])[['Petal Length']].mean()
-#print(petallengthmean)
+#print(petallengthmean) #debug
 
 # VAR 3 - std()
 petalwidthstd = df.groupby(['Species'])[['Petal Width']].std()
-#print(petalwidthstd)
+#print(petalwidthstd) #debug
 sepalwidthstd = df.groupby(['Species'])[['Sepal Width']].std()
-#print(sepalwidthstd)
+#print(sepalwidthstd) #debug
 petallenghtstd =df.groupby(['Species'])[['Petal Length']].std()
-#print(petallenghtstd)
+#print(petallenghtstd) #debug
 sepallenghtstd =df.groupby(['Species'])[['Sepal Length']].std()
-#print(sepallenghtstd)
+#print(sepallenghtstd) #debug
 
 # VAR 4 - min()
 petalwidthmin = df.groupby(['Species'])[['Petal Width']].min()
-#print(petalwidthmin)
+#print(petalwidthmin) #debug
 sepalwidthmin = df.groupby(['Species'])[['Sepal Width']].min()
-#print(sepalwidthmin)
+#print(sepalwidthmin) #debug
 petallenghtmin =df.groupby(['Species'])[['Petal Length']].min()
-#print(petallenghtmin)
+#print(petallenghtmin) #debug
 sepallenghtmin =df.groupby(['Species'])[['Sepal Length']].min()
-#print(sepallenghtmin)
+#print(sepallenghtmin) #debug
 
 # VAR 5 - max()
 petalwidthmax = df.groupby(['Species'])[['Petal Width']].max()
-#print(petalwidthmax)
+#print(petalwidthmax) #debug
 sepalwidthmax = df.groupby(['Species'])[['Sepal Width']].max()
-#print(sepalwidthmax)
+#print(sepalwidthmax) #debug
 petallenghtmax =df.groupby(['Species'])[['Petal Length']].max()
-#print(petallenghtmax)
+#print(petallenghtmax) #debug
 sepallenghtmax =df.groupby(['Species'])[['Sepal Length']].max()
-#print(sepallenghtmax)
+#print(sepallenghtmax) #debug
 '''
 # NEED TO WORK ON THIS NEXT!!!
 x = sepal width # need to make into list/array
