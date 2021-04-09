@@ -10,19 +10,23 @@
 
 ## **Ronald Fisher**
 # ![eg.](fisher.jpg)
-#### Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician, eugenicist, and biologist. Fisher's Iris data set also known as the Iris flower data set is a multivariate data set introduced by Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis. 
+#### Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician, eugenicist, and biologist. Fisher's Iris data set also known as the Iris flower data set is a multivariate data set introduced by Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis.
+&nbsp;
+#### REFERENCE HERE!!!! <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
+
+&nbsp;
 
 ## **Iris Flower Data Set**
 #### The dataset contains a set of 150 records under five attributes - sepal length, sepal width, petal length, petal width and species. This data set became a typical test case for many statistical classification techniques in machine learning such as support vector machines. 
 
-## **Iris-Setosa**
-# ![eg.](setosa.jpg)
-## **Iris-Versicolor**
-# ![eg.](versicolor.jpg) 
-## **Iris-Virginica**                                  
-# ![eg.](virginica.jpg) 
+&nbsp;
+
+# ![Flowers](irisflowers.jpg)
 
 &nbsp;
+
+
+
 
 
 
