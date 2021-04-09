@@ -23,6 +23,8 @@ species = df['Species'].value_counts()  #gives count of each species
 #print(species)  #debug
 # <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
 
+columns = ['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
+
 
 # SUMMARY TO TXT FILE 
 # <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> 
@@ -103,15 +105,21 @@ petallenghtmax =df.groupby(['Species'])[['Petal Length']].max()
 #print(petallenghtmax) #debug
 sepallenghtmax =df.groupby(['Species'])[['Sepal Length']].max()
 #print(sepallenghtmax) #debug
-'''
-# NEED TO WORK ON THIS NEXT!!!
-x = sepal width # need to make into list/array
-y = count 
-df.plot(kind='scatter', x, y)
+
+
+
+
+
+# This gives histo of all 4 columns ### need to fix this! 
+df.plot.hist()
 plt.show()
-'''
-# HISTO 1: COUTNS
-#SEPAL WIDTH VS PETAL WIDTH OF 3 SPECIES 
+#or
+plt.figure()
+df.plot.hist(['Sepal Length'])
+plt.xlabel('Sepal Length in cm')
+plt.ylabel('Frequency')
+plt.show()
+
 
 
 # This bit works but not what I want
@@ -119,4 +127,8 @@ plt.show()
 plt.figure()
 df.plot.scatter(x='Sepal Length', y='Sepal Width')
 plt.show()
+
+# HISTO 1: COUTNS
+#SEPAL WIDTH VS PETAL WIDTH OF 3 SPECIES 
+
 

@@ -1,9 +1,29 @@
-# just to start off to refresh my memory on markdown syntax
+# **PANDS-PROJECT 2021**
+## Author: Sarah McNelis  
 
-# PANDS-PROJECT2021 README.MD
-# Author: Sarah McNelis  
+&nbsp; 
 
-&nbsp; #gives spacce
+## **Introduction** 
+#### The aim of this project is to research, investigate and analyse Fisher's Iris data set. I have written a program in python to complete this task. First let's take a look at the man behind the data set; Ronald Fisher.
+
+&nbsp;
+
+## **Ronald Fisher**
+# ![eg.](fisher.jpg)
+#### Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician, eugenicist, and biologist. Fisher's Iris data set also known as the Iris flower data set is a multivariate data set introduced by Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis. 
+
+## **Iris Flower Data Set**
+#### The dataset contains a set of 150 records under five attributes - sepal length, sepal width, petal length, petal width and species. This data set became a typical test case for many statistical classification techniques in machine learning such as support vector machines. 
+
+## **Iris-Setosa**
+# ![eg.](setosa.jpg)
+## **Iris-Versicolor**
+# ![eg.](versicolor.jpg) 
+## **Iris-Virginica**                                  
+# ![eg.](virginica.jpg) 
+
+&nbsp;
+
 
 
 # downloaded csv iris data set
@@ -20,7 +40,7 @@
 # > for quote
 
 
-## **Introduction** here 
+
 #### brief intro. maybe some pics? ## note to self - look up markdown syntax on how to do this
 
 ## para here to explain different **variables**
