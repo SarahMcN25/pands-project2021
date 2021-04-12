@@ -1,23 +1,23 @@
-# **PANDS-PROJECT 2021**
-## Author: Sarah McNelis  
+## **PANDS-PROJECT 2021**
+### Author: Sarah McNelis  
 
 &nbsp; 
 
-## **Introduction** 
-#### The aim of this project is to research, investigate and analyse Fisher's Iris data set. I have written a program in python to complete this task. First let's take a look at the man behind the data set; Ronald Fisher.
+### **Introduction** 
+The aim of this project is to research, investigate and analyse Fisher's Iris data set. I have written a program in python to complete this task. First let's take a look at the man behind the data set; Ronald Fisher.
 
 &nbsp;
 
-## **Ronald Fisher**
+### **Ronald Fisher**
 # ![eg.](fisher.jpg)
-#### Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician, eugenicist, and biologist. Fisher's Iris data set also known as the Iris flower data set is a multivariate data set introduced by Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis.
+Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician, eugenicist, and biologist. Fisher's Iris data set also known as the Iris flower data set is a multivariate data set introduced by Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis.
 &nbsp;
 #### REFERENCE HERE!!!! <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
 
 &nbsp;
 
-## **Iris Flower Data Set**
-#### The dataset contains a set of 150 records under five attributes - sepal length, sepal width, petal length, petal width and species. This data set became a typical test case for many statistical classification techniques in machine learning such as support vector machines. 
+### **Iris Flower Data Set**
+The dataset contains a set of 150 records under five attributes - sepal length, sepal width, petal length, petal width and species. This data set became a typical test case for many statistical classification techniques in machine learning such as support vector machines. 
 
 &nbsp;
 
