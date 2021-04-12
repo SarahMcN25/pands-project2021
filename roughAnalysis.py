@@ -37,11 +37,81 @@ minvalues = df.min()
 #print(maxvalues)
 
 
+#<<https://realpython.com/pandas-groupby/>>
+
+# VAR 1 - count()
+petalwidthcount = df.groupby(['Species'])[['Petal Width']].count()
+#print(petalwidthcount) #debug
+sepalwidthcount = df.groupby(['Species'])[['Sepal Width']].count()
+#print(sepalwidthcount) #debug
+petallenghtcount =df.groupby(['Species'])[['Petal Length']].count()
+#print(petallenghtcount) #debug
+sepallenghtcount =df.groupby(['Species'])[['Sepal Length']].count()
+#print(sepallenghtcount) #debug
+
+# VAR 2 - mean()
+sepalwidthmean = df.groupby(['Species'])[['Sepal Width']].mean()
+#print(sepalwidthmean) #debug
+sepallenghtmean =df.groupby(['Species'])[['Sepal Length']].mean()
+#print(sepallenghtmean) #debug
+petalwidthmean = df.groupby(['Species'])[['Petal Width']].mean()
+#print(petalwidthmean) #debug
+petallengthmean =df.groupby(['Species'])[['Petal Length']].mean()
+#print(petallengthmean) #debug
+
+# VAR 3 - std()
+petalwidthstd = df.groupby(['Species'])[['Petal Width']].std()
+#print(petalwidthstd) #debug
+sepalwidthstd = df.groupby(['Species'])[['Sepal Width']].std()
+#print(sepalwidthstd) #debug
+petallenghtstd =df.groupby(['Species'])[['Petal Length']].std()
+#print(petallenghtstd) #debug
+sepallenghtstd =df.groupby(['Species'])[['Sepal Length']].std()
+#print(sepallenghtstd) #debug
+
+# VAR 4 - min()
+petalwidthmin = df.groupby(['Species'])[['Petal Width']].min()
+#print(petalwidthmin) #debug
+sepalwidthmin = df.groupby(['Species'])[['Sepal Width']].min()
+#print(sepalwidthmin) #debug
+petallenghtmin =df.groupby(['Species'])[['Petal Length']].min()
+#print(petallenghtmin) #debug
+sepallenghtmin =df.groupby(['Species'])[['Sepal Length']].min()
+#print(sepallenghtmin) #debug
+
+# VAR 5 - max()
+petalwidthmax = df.groupby(['Species'])[['Petal Width']].max()
+#print(petalwidthmax) #debug
+sepalwidthmax = df.groupby(['Species'])[['Sepal Width']].max()
+#print(sepalwidthmax) #debug
+petallenghtmax =df.groupby(['Species'])[['Petal Length']].max()
+#print(petallenghtmax) #debug
+sepallenghtmax =df.groupby(['Species'])[['Sepal Length']].max()
+#print(sepallenghtmax) #debug
+
+
+
+
+
+
+
+
 
 # HISTOS
 ## https://www.w3schools.com/python/matplotlib_histograms.asp
 ## https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/ 
 ## https://realpython.com/python-histograms/ 
+
+
+# plt histograms of each data and save as png
+fig = plt.figure()
+plt.hist(df['Sepal Length'])
+plt.xlabel('sepal length in cm')
+plt.ylabel('Frequency')
+plt.savefig('sepal_length_hist.png') 
+
+
+
 
 xpoints = np.array()
 ypoints = np.array()

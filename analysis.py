@@ -36,11 +36,11 @@ with open ('summary.txt', 'wt') as f:
     print(species, file=f)                                          # counts number of species
     f.write('\nShape of Iris Dataset:\n',)
     print(df.shape, file=f)                                         # prints shape of data set
-    f.write('\nStatistical Summary of Iris Setosa Species:\n',)
+    f.write('\nStatistical Summary of Iris Setosa:\n',)
     print(df[df['Species'] == 'setosa'].describe(), file=f)         # prints summary of setosa
-    f.write('\nStatistical Summary of Iris Versicolor Species:\n')
+    f.write('\nStatistical Summary of Iris Versicolor:\n')
     print(df[df['Species'] == 'versicolor'].describe(), file=f)     # prints summary of versicolor      
-    f.write('\nStatistical Summary of Iris Virginica Species:\n')
+    f.write('\nStatistical Summary of Iris Virginica:\n')
     print(df[df['Species'] == 'virginica'].describe(), file=f)      # prints summary of virginica
     f.write('\nFirst 5 rows of the Iris Dataset:\n')
     print(df.head(5), file=f)                                       # pinrts top 5 rows
@@ -53,82 +53,51 @@ with open ('summary.txt', 'wt') as f:
     f.write('\nFirst 3 Rows of the Iris Virginica Species:\n')
     print(df[df['Species'] == 'virginica'].head(3), file=f)         # prints top 3 rows of virginica
     
+    # MAYBE PUT A CORRELATION IN HERE??
 
-#<<https://realpython.com/pandas-groupby/>>
+# <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>>
+# <<https://seaborn.pydata.org/examples/index.html>>
+# 
+# SCATTERS
 
-# VAR 1 - count()
-petalwidthcount = df.groupby(['Species'])[['Petal Width']].count()
-#print(petalwidthcount) #debug
-sepalwidthcount = df.groupby(['Species'])[['Sepal Width']].count()
-#print(sepalwidthcount) #debug
-petallenghtcount =df.groupby(['Species'])[['Petal Length']].count()
-#print(petallenghtcount) #debug
-sepallenghtcount =df.groupby(['Species'])[['Sepal Length']].count()
-#print(sepallenghtcount) #debug
+# PL VS PW
+fig = plt.figure()
+sns.scatterplot(x="Petal Length", y="Petal Width", data=df, hue='Species')
+plt.legend(loc='best')
+#plt.show() 
+plt.savefig('scatterPetalLength_PetalWidth.png')
 
-# VAR 2 - mean()
-sepalwidthmean = df.groupby(['Species'])[['Sepal Width']].mean()
-#print(sepalwidthmean) #debug
-sepallenghtmean =df.groupby(['Species'])[['Sepal Length']].mean()
-#print(sepallenghtmean) #debug
-petalwidthmean = df.groupby(['Species'])[['Petal Width']].mean()
-#print(petalwidthmean) #debug
-petallengthmean =df.groupby(['Species'])[['Petal Length']].mean()
-#print(petallengthmean) #debug
+# SL VS SW
+fig = plt.figure()
+sns.scatterplot(x="Sepal Length", y="Sepal Width", data=df, hue='Species')
+plt.legend(loc='best')
+#plt.show() 
+plt.savefig('scatterSepalLength_SepalWidth.png')
 
-# VAR 3 - std()
-petalwidthstd = df.groupby(['Species'])[['Petal Width']].std()
-#print(petalwidthstd) #debug
-sepalwidthstd = df.groupby(['Species'])[['Sepal Width']].std()
-#print(sepalwidthstd) #debug
-petallenghtstd =df.groupby(['Species'])[['Petal Length']].std()
-#print(petallenghtstd) #debug
-sepallenghtstd =df.groupby(['Species'])[['Sepal Length']].std()
-#print(sepallenghtstd) #debug
+# PL VS SL
+fig = plt.figure()
+sns.scatterplot(x="Petal Length", y="Sepal Length", data=df, hue='Species')
+plt.legend(loc='best')
+#plt.show() 
+plt.savefig('scatterPetalLength_SepalLength.png')
 
-# VAR 4 - min()
-petalwidthmin = df.groupby(['Species'])[['Petal Width']].min()
-#print(petalwidthmin) #debug
-sepalwidthmin = df.groupby(['Species'])[['Sepal Width']].min()
-#print(sepalwidthmin) #debug
-petallenghtmin =df.groupby(['Species'])[['Petal Length']].min()
-#print(petallenghtmin) #debug
-sepallenghtmin =df.groupby(['Species'])[['Sepal Length']].min()
-#print(sepallenghtmin) #debug
+# SW VS PW
+fig = plt.figure()
+sns.scatterplot(x="Sepal Width", y="Petal Width", data=df, hue='Species')
+plt.legend(loc='best')
+#plt.show() 
+plt.savefig('scatterSepalWidth_PetalWidth.png')
 
-# VAR 5 - max()
-petalwidthmax = df.groupby(['Species'])[['Petal Width']].max()
-#print(petalwidthmax) #debug
-sepalwidthmax = df.groupby(['Species'])[['Sepal Width']].max()
-#print(sepalwidthmax) #debug
-petallenghtmax =df.groupby(['Species'])[['Petal Length']].max()
-#print(petallenghtmax) #debug
-sepallenghtmax =df.groupby(['Species'])[['Sepal Length']].max()
-#print(sepallenghtmax) #debug
+# PL VS SW
+fig = plt.figure()
+sns.scatterplot(x="Petal Length", y="Sepal Width", data=df, hue='Species')
+plt.legend(loc='best')
+#plt.show() 
+plt.savefig('scatterPetalLength_SepalWidth.png')
 
-
-
-
-
-# This gives histo of all 4 columns ### need to fix this! 
-df.plot.hist()
-plt.show()
-#or
-plt.figure()
-df.plot.hist(['Sepal Length'])
-plt.xlabel('Sepal Length in cm')
-plt.ylabel('Frequency')
-plt.show()
-
-
-
-# This bit works but not what I want
-# Need to think how to do each variable?? 
-plt.figure()
-df.plot.scatter(x='Sepal Length', y='Sepal Width')
-plt.show()
-
-# HISTO 1: COUTNS
-#SEPAL WIDTH VS PETAL WIDTH OF 3 SPECIES 
-
-
+# SL VS PW
+fig = plt.figure()
+sns.scatterplot(x="Sepal Length", y="Petal Width", data=df, hue='Species')
+plt.legend(loc='best')
+#plt.show() 
+plt.savefig('scatterSepalLength_PetalWidth.png')
