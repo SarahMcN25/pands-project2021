@@ -59,9 +59,8 @@ with open ('summary.txt', 'wt') as f:
 # <<https://seaborn.pydata.org/examples/index.html>>
 # 
 # SCATTERS
-
 # PL VS PW
-fig = plt.figure()
+fig = plt.figure() # this keeps x and y within each plot
 sns.scatterplot(x="Petal Length", y="Petal Width", data=df, hue='Species')
 plt.legend(loc='best')
 #plt.show() 
@@ -101,3 +100,35 @@ sns.scatterplot(x="Sepal Length", y="Petal Width", data=df, hue='Species')
 plt.legend(loc='best')
 #plt.show() 
 plt.savefig('scatterSepalLength_PetalWidth.png')
+
+# <<https://seaborn.pydata.org/generated/seaborn.histplot.html>>
+
+# HISTOS
+# PL
+fig = plt.figure() # this keeps x and y within each plot
+sns.histplot(x="Petal Length", data=df, hue='Species')
+#plt.legend(loc='best')
+#plt.show() 
+plt.savefig('histogramPetalLength.png')
+
+# SL
+fig = plt.figure()
+sns.histplot(x="Sepal Length", data=df, hue='Species')
+#plt.legend(loc='best')
+#plt.show() 
+plt.savefig('histogramSepalLength.png')
+
+# PW
+fig = plt.figure()
+sns.histplot(x="Petal Width", data=df, hue='Species')
+#plt.legend(loc='best')
+#plt.show() 
+plt.savefig('histogramPetalWidth.png')
+
+# SW
+fig = plt.figure()
+sns.histplot(x="Sepal Width", data=df, hue='Species')
+#plt.legend(loc='best')
+#plt.show() 
+plt.savefig('histogramSepalWidth.png')
+
