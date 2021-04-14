@@ -1,13 +1,12 @@
 ## **PANDS-PROJECT 2021**
 ### Author: Sarah McNelis
-&nbsp; 
+&nbsp;
 ### **Introduction** 
 The aim of this project is to research, investigate and analyse Fisher's Iris data set. I have written a program in python to complete this task. First let's take a look at the man behind the data set:
 &nbsp;
 ### **Ronald Fisher**
 Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician, eugenicist, and biologist. Fisher's Iris data set also known as the Iris flower data set. It is a multivariate data set introduced by Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis. 
 <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
-&nbsp;
 # ![eg.](fish.png) 
 ### **Iris Flower Data Set**
 The dataset contains a set of 150 records under five attributes - sepal length, sepal width, petal length, petal width and species. These records are broken down into three species: Iris-Setosa, Iris-Versicolor and Iris-Virginica. Each species contains 50 records each. This data set became a typical test case for many statistical classification techniques in machine learning such as support vector machines. 
