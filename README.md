@@ -21,13 +21,13 @@ The second step was developing code. This required opening the csv file in order
 &nbsp;
 
 
-para here to explain different **variables**
+#### para here to explain different **variables**
 &nbsp;
-new para here to explain ** writing to text file**
+#### new para here to explain ** writing to text file**
 &nbsp;
-new para here to explain **histogram of each variable**
+#### new para here to explain **histogram of each variable**
 &nbsp;
-new para here to explain ** scatter for each variable**
+#### new para here to explain ** scatter for each variable**
 &nbsp;
 ## **REFERENCES:**
 <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
