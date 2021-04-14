@@ -5,6 +5,10 @@
 ## not sure which way is better or more advised? need to look up
 filename = 'iris.csv'
 df = pd.read_csv(filename)
+# downloaded .data 
+# http://archive.ics.uci.edu/ml/datasets/Iris 
+# http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
+
 
 
 ##### dont think i need this.....

@@ -2,39 +2,27 @@
 ### Author: Sarah McNelis
 &nbsp;
 ### **Introduction** 
-The aim of this project is to research, investigate and analyse Fisher's Iris data set. I have written a program in python to complete this task. First let's take a look at the man behind the data set:
+The aim of this project is to research, investigate and analyse Fisher's Iris data set. I have written a program in python to complete this task. First let's take a look at the man behind the data set.
 &nbsp;
 ### **Ronald Fisher**
-Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician, eugenicist, and biologist. Fisher's Iris data set also known as the Iris flower data set. It is a multivariate data set introduced by Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis. <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
-# ![eg.](rfish.jpg) 
+Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician, eugenicist, and biologist. Fisher's Iris data set also known as the Iris flower data set. It is a multivariate data set introduced by Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>.
+# ![eg.](imagefisher.jpg) 
 ### **Iris Flower Data Set**
-The dataset contains a set of 150 records under five attributes - sepal length, sepal width, petal length, petal width and species. These records are broken down into three species: Iris-Setosa, Iris-Versicolor and Iris-Virginica. Each species contains 50 records each. This data set became a typical test case for many statistical classification techniques in machine learning such as support vector machines. 
-<<https://www.kaggle.com/arshid/iris-flower-dataset>>
-&nbsp;
+The dataset contains a set of 150 records under five attributes - sepal length, sepal width, petal length, petal width and species. These records are broken down into three species: Iris-Setosa, Iris-Versicolor and Iris-Virginica. Each species contains 50 records each. This data set became a typical test case for many statistical classification techniques in machine learning such as support vector machines 
+<<https://www.kaggle.com/arshid/iris-flower-dataset>>.
 # ![3Flowers](imageflowers.jpg)
-&nbsp;
+### **The Research**
+The first step of this project was reseaching the Iris data set. When I started this task I had no prior knowlege of this data set or of flowers in general. I decided to explore the basics of flowers. I discovered what part of the flower the sepal referered to.  
+
+I downloaded the data set in a csv file at <<ttps://www.kaggle.com/saurabh00007/iriscsv>>. 
 
 
 
 
 
 
-# downloaded csv iris data set
-# https://www.kaggle.com/saurabh00007/iriscsv
-# downloaded .data @
-# http://archive.ics.uci.edu/ml/datasets/Iris 
-# http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
 
 
-
-
-### - 
-# 1.**heading** #bold
-# > for quote
-
-
-
-#### brief intro. maybe some pics? ## note to self - look up markdown syntax on how to do this
 
 ## para here to explain different **variables**
 
