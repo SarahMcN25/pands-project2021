@@ -10,6 +10,8 @@ df = pd.read_csv(filename)
 # http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
 
 
+columns = ['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
+
 
 ##### dont think i need this.....
 

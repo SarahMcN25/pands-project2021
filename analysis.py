@@ -23,8 +23,6 @@ species = df['Species'].value_counts()  #gives count of each species
 #print(species)  #debug
 # <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
 
-columns = ['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
-
 
 # SUMMARY TO TXT FILE 
 # <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> 
