@@ -15,7 +15,7 @@ Sir Ronald Fisher (17 February 1890 – 29 July 1962) was a British statistician
 The dataset contains a set of 150 records under five attributes - sepal length, sepal width, petal length, petal width and species. These records are broken down into three species: Iris-Setosa, Iris-Versicolor and Iris-Virginica. Each species contains 50 records each. This data set became a typical test case for many statistical classification techniques in machine learning such as support vector machines. 
 <<https://www.kaggle.com/arshid/iris-flower-dataset>>
 &nbsp;
-# ![3Flowers](image3flowers.png)
+# ![3Flowers](flowers.png)
 &nbsp;
 
 
