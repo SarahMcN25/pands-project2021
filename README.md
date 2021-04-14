@@ -21,24 +21,15 @@ The second step was developing code. This required opening the csv file in order
 &nbsp;
 
 
-
-
-## para here to explain different **variables**
-
-
-## new para here to explain ** writing to text file**
-
-## new para here to explain **histogram of each variable**
-
-## new para here to explain ** scatter for each variable**
-
-# eg of how to add screensnip by pushing png file to repository
-## https://www.foxinfotech.in/2019/12/github-markdown-add-an-image-to-readme-md-file.html#:~:text=1%20Add%20an%20existing%20Image%20to%20README.md%20file,...%203%20Add%20an%20Image%20from%20External%20Resource
-
-# ![eg.](picexample.png)
-
-
-## **REFERENCES:** #big heading 
+para here to explain different **variables**
+&nbsp;
+new para here to explain ** writing to text file**
+&nbsp;
+new para here to explain **histogram of each variable**
+&nbsp;
+new para here to explain ** scatter for each variable**
+&nbsp;
+## **REFERENCES:**
 <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
 <<https://www.kaggle.com/arshid/iris-flower-dataset>>
 <<https://www.kaggle.com/saurabh00007/iriscsv>>
