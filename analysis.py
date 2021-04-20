@@ -6,27 +6,21 @@ import matplotlib.pyplot as plt
 import pandas as pd 
 import seaborn as sns 
 
-# <<https://realpython.com/pandas-groupby/>>
 # Use 1 decimal places in output display
 pd.set_option("display.precision", 1)
-# Don't wrap repr(DataFrame) across additional lines
-pd.set_option("display.expand_frame_repr", False)
 
 filename = pd.read_csv('iris.csv')
 df = pd.DataFrame(filename)
-
 #print(df)
-#print(df.info(), file=f) 
-#<<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
 
-species = df['Species'].value_counts()  #gives count of each species
+df.info()
+#print(df.info())
+
+#count of each species
+species = df['Species'].value_counts()  
 #print(species)  #debug
-# <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
-
 
 # SUMMARY TO TXT FILE 
-# <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> 
-# <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>>
 with open ('summary.txt', 'wt') as f:
     f.write('The Iris Dataset: Statistics Summary of all Species\n')
     print(df.describe(), file=f)                                    #gives brief analysis of all 

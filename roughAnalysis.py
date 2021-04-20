@@ -1,16 +1,5 @@
-#https://en.wikipedia.org/wiki/Iris_flower_data_set
-#https://en.wikipedia.org/wiki/Ronald_Fisher
-
-#### alternative way of opening file 
-## not sure which way is better or more advised? need to look up
-filename = 'iris.csv'
-df = pd.read_csv(filename)
-# downloaded .data 
-# http://archive.ics.uci.edu/ml/datasets/Iris 
-# http://archive.ics.uci.edu/ml/machine-learning-databases/iris/
-
-
-columns = ['Sepal Length','Sepal Width','Petal Length','Petal Width','Species']
+# Don't wrap repr(DataFrame) across additional lines
+pd.set_option("display.expand_frame_repr", False)
 
 
 ##### dont think i need this.....
