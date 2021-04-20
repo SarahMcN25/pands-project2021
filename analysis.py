@@ -75,11 +75,6 @@ sns.histplot(x="Sepal Width", data=df, hue='Species')
 plt.savefig('histogramSepalWidth.png')    
 
 
-
-
-# <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>>
-# <<https://seaborn.pydata.org/examples/index.html>>
-
 # SCATTERS
 # PL VS PW
 fig = plt.figure() # this keeps x and y within each plot
@@ -123,7 +118,6 @@ plt.legend(loc='best')
 #plt.show() 
 plt.savefig('scatterSepalLength_PetalWidth.png')
 
-# <<https://seaborn.pydata.org/generated/seaborn.histplot.html>>
 
 
 

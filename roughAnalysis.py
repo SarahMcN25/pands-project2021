@@ -1,7 +1,6 @@
 # Don't wrap repr(DataFrame) across additional lines
 pd.set_option("display.expand_frame_repr", False)
 
-
 ##### dont think i need this.....
 
 # mean of each column of each species
@@ -13,8 +12,6 @@ meanvirginica = df[df['Species'] == 'virginica'].mean()
 
 ##### or this
 # var 2 - Mean of all columns 
-# <<https://www.statology.org/mean-of-column-pandas/>>
-# <<https://www.w3schools.com/python/module_math.asp>>
 meanvalues = df.mean()
 #print(meanvalues)
 
@@ -30,9 +27,6 @@ minvalues = df.min()
 # var 5 - highest value for each column
 #maxvalues = df.max()
 #print(maxvalues)
-
-
-#<<https://realpython.com/pandas-groupby/>>
 
 # VAR 1 - count()
 petalwidthcount = df.groupby(['Species'])[['Petal Width']].count()
@@ -85,13 +79,6 @@ sepallenghtmax =df.groupby(['Species'])[['Sepal Length']].max()
 #print(sepallenghtmax) #debug
 
 
-
-
-
-
-
-
-
 # HISTOS
 
 font1 = {'family':'times new roman','color':'tab:red','size':30, 'weight':'bold', 'style':'oblique'}
@@ -112,8 +99,6 @@ plt.savefig('hist 1   .png')
 
 DataFrame.hist() # plots the histograms of the columns on multiple subplots:
 data.hist(by=np.random.randint(0, 4, 1000), figsize=(6, 4)) 
-#The by keyword can be specified to plot grouped histograms:#
-###### 
 
 # SCATTERS 
 

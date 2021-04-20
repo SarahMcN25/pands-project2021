@@ -23,19 +23,25 @@ These tables give a brief summary of each species which are also broken down int
 # ![headAndTail](imageHeadAndTail.jpg)
 - The next step involved creating histograms of each variable which I have saves as png files in this respository. I decided to creat a histogram for each of the attributes: sepal length, sepal width, petal length, petal width. Within each of these histograms I choose to break down the results showing each attribute of each species as you can see below. 
 #### **ENTER IMAGE OF 4 HISTOGRAMS HERE!!!!!!!!! 
+#### Mention something about matrix??
+
+- Finally, the last step of this analysis is creating a scatterplot of each pair of variables. For this part of the task I decided to compare the following:
+1. Petal Lenght and Petal Width 
+2. Sepal Lenght and Sepal Width
+3. Petal Lenght and Sepal Lenght
+4. Sepal Width and Petal Width
+5. Petal Lenght and Sepal Width 
+6. Sepal Lenght and Petal Width  
+&nbsp;
+This involved setting each of the pairs above to the x and y axis'. using hue........
+# FINISH THIS HERE!!!!! 
+# INCLUDE MATRIX OF SCATTERPLOTS HERE TOO!!! 
 
 &nbsp;
-
-
-#### para here to explain different **variables**
+### **Conclusion** 
+After completing data analysis of Fisher's Iris data set I have determined that there is a wealth of information available on this particular data frame. I used a substantial amount of resources in my research and development of my python program. There are numourous ways that this data set can be analysied and manipulated.  
 &nbsp;
-#### new para here to explain ** writing to text file**
-&nbsp;
-#### new para here to explain **histogram of each variable**
-&nbsp;
-#### new para here to explain ** scatter for each variable**
-&nbsp;
-## **REFERENCES:**
+## **References/Resources used:**
 a
 
 b
@@ -91,6 +97,11 @@ r
 - <<https://realpython.com/python-histograms/>>
 
 s
+- <<https://seaborn.pydata.org/examples/index.html>>
+-  <<https://seaborn.pydata.org/generated/seaborn.histplot.html>>
+- <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>>
+- <<https://www.statology.org/mean-of-column-pandas/>>
+
 
 t
 - <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
@@ -98,7 +109,6 @@ t
 u
 
 v
-
 
 w
 - <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
@@ -111,6 +121,7 @@ w
 - <<https://en.wikipedia.org/wiki/Support-vector_machine>>
 - <<https://www.w3schools.com/python/matplotlib_histograms.asp>>
 - <<https://www.w3schools.com/python/matplotlib_scatter.asp>>
+- <<https://www.w3schools.com/python/module_math.asp>>
 - <<https://www.w3schools.com/python/python_file_handling.asp>>
 x
 
