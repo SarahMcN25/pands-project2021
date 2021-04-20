@@ -44,12 +44,42 @@ with open ('summary.txt', 'wt') as f:
     print(df[df['Species'] == 'versicolor'].head(), file=f)         # prints top 6 rows of versicolor
     f.write('\nFirst 3 Rows of the Iris Virginica Species:\n')
     print(df[df['Species'] == 'virginica'].head(3), file=f)         # prints top 3 rows of virginica
-    
-    # MAYBE PUT A CORRELATION IN HERE??
+
+# HISTOGRAMS
+# PL
+fig = plt.figure() # this keeps x and y within each plot
+sns.histplot(x="Petal Length", data=df, hue='Species')
+#plt.legend(loc='best')
+#plt.show() 
+plt.savefig('histogramPetalLength.png')
+
+# SL
+fig = plt.figure()
+sns.histplot(x="Sepal Length", data=df, hue='Species')
+#plt.legend(loc='best')
+#plt.show() 
+plt.savefig('histogramSepalLength.png')
+
+# PW
+fig = plt.figure()
+sns.histplot(x="Petal Width", data=df, hue='Species')
+#plt.legend(loc='best')
+#plt.show() 
+plt.savefig('histogramPetalWidth.png')
+
+# SW
+fig = plt.figure()
+sns.histplot(x="Sepal Width", data=df, hue='Species')
+#plt.legend(loc='best')
+#plt.show() 
+plt.savefig('histogramSepalWidth.png')    
+
+
+
 
 # <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>>
 # <<https://seaborn.pydata.org/examples/index.html>>
-# 
+
 # SCATTERS
 # PL VS PW
 fig = plt.figure() # this keeps x and y within each plot
@@ -95,32 +125,5 @@ plt.savefig('scatterSepalLength_PetalWidth.png')
 
 # <<https://seaborn.pydata.org/generated/seaborn.histplot.html>>
 
-# HISTOS
-# PL
-fig = plt.figure() # this keeps x and y within each plot
-sns.histplot(x="Petal Length", data=df, hue='Species')
-#plt.legend(loc='best')
-#plt.show() 
-plt.savefig('histogramPetalLength.png')
 
-# SL
-fig = plt.figure()
-sns.histplot(x="Sepal Length", data=df, hue='Species')
-#plt.legend(loc='best')
-#plt.show() 
-plt.savefig('histogramSepalLength.png')
-
-# PW
-fig = plt.figure()
-sns.histplot(x="Petal Width", data=df, hue='Species')
-#plt.legend(loc='best')
-#plt.show() 
-plt.savefig('histogramPetalWidth.png')
-
-# SW
-fig = plt.figure()
-sns.histplot(x="Sepal Width", data=df, hue='Species')
-#plt.legend(loc='best')
-#plt.show() 
-plt.savefig('histogramSepalWidth.png')
 

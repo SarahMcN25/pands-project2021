@@ -93,23 +93,6 @@ sepallenghtmax =df.groupby(['Species'])[['Sepal Length']].max()
 
 
 # HISTOS
-## https://www.w3schools.com/python/matplotlib_histograms.asp
-## https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/ 
-## https://realpython.com/python-histograms/ 
-
-
-# plt histograms of each data and save as png
-fig = plt.figure()
-plt.hist(df['Sepal Length'])
-plt.xlabel('sepal length in cm')
-plt.ylabel('Frequency')
-plt.savefig('sepal_length_hist.png') 
-
-
-
-
-xpoints = np.array()
-ypoints = np.array()
 
 font1 = {'family':'times new roman','color':'tab:red','size':30, 'weight':'bold', 'style':'oblique'}
 font2 = {'family': 'times new roman', 'color':'indianred', 'size':20, 'weight':'semibold'}

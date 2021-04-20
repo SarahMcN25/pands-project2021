@@ -19,7 +19,9 @@ These records are broken down into three species: Iris-Setosa, Iris-Versicolor a
 # ![describe()](imageDescribeAll.jpg)
 I then used the variable species which gives a count of each of the different species within the data frame. The shape() function gives the shape of the data frame. In this case it reported the shape as (150,5) which means it consists of 150 rows and 5 columns. Then I decided to break down the statical analysis for each of the three species. 
 # ![describe()](imageDescribeEach.jpg)
-
+These tables give a brief summary of each species which are also broken down into four columns showing the sepal length, sepal width, petal length and petal width. I then decided to select the first five rows form the top of the data frame using the head() function and also the last seven rows from the bottom using the tail() function. I subsequently discovered that I could not only select the head and tail of the whole data frame but also the three species specifically as I did with the describle function. As can be seen in the below image there are numerous ways of breaking down and analysing data frames. 
+# ![headAndTail](imageHeadAndTail.jpg)
+- The next step involved creating histograms of each variable which I have saves as png files in this respository. 
 &nbsp;
 
 
@@ -52,7 +54,11 @@ I then used the variable species which gives a count of each of the different sp
 <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
 <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
 <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html>>
-
+<<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>>
+<<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html>>
+<<https://www.w3schools.com/python/matplotlib_histograms.asp>>
+<<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>>
+<<https://realpython.com/python-histograms/>>
 
 
 
