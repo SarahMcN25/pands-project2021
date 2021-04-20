@@ -15,9 +15,10 @@ These records are broken down into three species: Iris-Setosa, Iris-Versicolor a
 - The first step of this project was reseaching the Iris data set. I downloaded the data set in a csv file format. I then decided to explore the different attributes of the data set. I found some images online which clarify which part of Iris flower is the sepal and which part is the petal. Sepals are usually green and offers support and protection to the petal. However, the sepal of the Iris flower is typically a shade of purple. The role of the petal is to surround and protect the reproductive part of the flower.
 # ![sepalPetal](imageSepalPetal.jpg)
 - The second step was developing code. This required importing various modules required to complete the analysis. Numpy and matplotlib are used for plotting the analysis and pandas is used for anylising the data frame. After this is did a bit of housekeeping. I decided to set the program to only allow 1 decimal place in the output display as it is neater and easier to read. Next I opened the csv file in read mode in order to begin the analysis. 
-- Next I began writing a summary to a text file named summary.txt. I did this opening the file in write mode. I then discovered the function describe() which gives a statical summary of the data frame. I then used the variable species which gives a count of each of the different species within the data frame
-
-
+- Next I began writing a summary to a text file named summary.txt. I did this opening the file in write mode. I then discovered the function describe() which as you can see below gives a statical summary of the data frame in tabular form.
+# ![describe()](imageDescribeAll.jpg)
+I then used the variable species which gives a count of each of the different species within the data frame. The shape() function gives the shape of the data frame. In this case it reported the shape as (150,5) which means it consists of 150 rows and 5 columns. Then I decided to break down the statical analysis for each of the three species. 
+# ![describe()](imageDescribeEach.jpg)
 
 &nbsp;
 
@@ -50,6 +51,7 @@ These records are broken down into three species: Iris-Setosa, Iris-Versicolor a
 <<https://www.w3schools.com/python/python_file_handling.asp>>
 <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
 <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
+<<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html>>
 
 
 
