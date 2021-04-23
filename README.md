@@ -37,6 +37,17 @@ This involved setting each of the pairs above to the x and y axis'. using hue...
 # FINISH THIS HERE!!!!! 
 # INCLUDE MATRIX OF SCATTERPLOTS HERE TOO!!! 
 
+histogram..................
+########## hue parameter determines which column in the data frame should be used for colour encoding found below
+########## 
+#### stack will stack the different species 
+
+
+
+
+
+
+
 &nbsp;
 ### **Conclusion** 
 After completing data analysis of Fisher's Iris data set I have determined that there is a wealth of information available on this particular data frame. I used a substantial amount of resources in my research and development of my python program. There are numourous ways that this data set can be analysied and manipulated.  
@@ -74,7 +85,7 @@ k
 l
 
 m
-
+- <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>>
 n
 
 o
@@ -101,7 +112,6 @@ s
 -  <<https://seaborn.pydata.org/generated/seaborn.histplot.html>>
 - <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>>
 - <<https://www.statology.org/mean-of-column-pandas/>>
-
 
 t
 - <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>

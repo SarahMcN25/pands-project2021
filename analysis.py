@@ -41,12 +41,6 @@ with open ('summary.txt', 'wt') as f:
 
 # HISTOGRAMS
 
-########## hue parameter determines which column in the data frame should be used for colour encoding found below
-########## <<https://seaborn.pydata.org/generated/seaborn.histplot.html?highlight=seaborn%20histplot#seaborn.histplot>>
-#### stack will stack the different species <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>>
-
-
-
 # Petal Length
 def histPetalLength():
     plt.figure()
@@ -87,11 +81,13 @@ def histSepalWidth():
     plt.savefig('histogramSepalWidth.png')  
     #plt.show()
 
+# Calling the histogram functions here
 histPetalLength()
 histPetalWidth()
 histSepalLength()
 histSepalWidth()
 
+########################################################################################
 
 # SCATTERS
 # PL VS PW
