@@ -42,7 +42,7 @@ with open ('summary.txt', 'wt') as f:
     f.write('\nFirst 3 Rows of the Iris Virginica Species:\n')
     print(df[df['Species'] == 'virginica'].head(3), file=f)         # prints top 3 rows of virginica
 
-'''
+
 # HISTOGRAMS
 
 # Petal Length
@@ -53,7 +53,7 @@ def histPetalLength():
     plt.xlabel('Petal Length', size=11)
     plt.ylabel('Frequency', size=11)
     plt.savefig('histogramPetalLength.png')
-    #plt.show()
+    #plt.show() #debug
 
 # Petal Width
 def histPetalWidth():
@@ -63,7 +63,7 @@ def histPetalWidth():
     plt.xlabel('Petal Width', size=11)
     plt.ylabel('Frequency', size=11)
     plt.savefig('histogramPetalWidth.png')
-    #plt.show() 
+    #plt.show() #debug
 
 # Sepal Length
 def histSepalLength():
@@ -73,7 +73,7 @@ def histSepalLength():
     plt.xlabel('Sepal Length', size=11)
     plt.ylabel('Frequency', size=11)
     plt.savefig('histogramSepalLength.png')
-    #plt.show() 
+    #plt.show() #debug
 
 # Sepal Width
 def histSepalWidth():
@@ -83,84 +83,89 @@ def histSepalWidth():
     plt.xlabel('Sepal Width', size=11)
     plt.ylabel('Frequency', size=11)
     plt.savefig('histogramSepalWidth.png')  
-    #plt.show()
+    #plt.show() #debug
 
-# Calling the histogram functions here
+# Call histogram functions here
 histPetalLength()
 histPetalWidth()
 histSepalLength()
 histSepalWidth()
-'''
+
 
 # SCATTERS
-# <<https://matplotlib.org/stable/api/markers_api.html>> gives different symbols on scatter
 
 # Petal Length vs Petal Width
-def scatPLvPW():
+def scatterPetalLength_PetalWidth():
     plt.figure()
     sns.scatterplot(x='Petal Length', y='Petal Width', data=df, hue='Species')
-    plt.title('Petal Width vs Petal Length', size=16)
+    plt.title('Petal Length vs Petal Width', size=16)
     plt.xlabel('Petal Length', size=12)
     plt.ylabel('Petal Width', size=12)
     plt.legend(loc='best')
     plt.savefig('scatterPetalLength_PetalWidth.png')
-    #plt.show() 
+    #plt.show() #debug
     
 # Sepal Length vs Sepal Width
-def scatSLvSW():
+def scatterSepalLength_SepalWidth():
     plt.figure()
     sns.scatterplot(x='Sepal Length', y='Sepal Width', data=df, hue='Species')
-    plt.title('Sepal Width vs Sepal Length', size=16)
+    plt.title('Sepal Length vs Sepal Width', size=16)
     plt.xlabel('Sepal Length', size=12)
     plt.ylabel('Sepal Width', size=12)
     plt.legend(loc='best')
-    #plt.savefig('scatterSepalLength_SepalWidth.png')
-    plt.show() 
+    plt.savefig('scatterSepalLength_SepalWidth.png')
+    #plt.show() #debug
 
 # Petal Length vs Sepal Length
-def scatPLvSL():
+def scatterPetalLength_SepalLength():
     plt.figure()
     sns.scatterplot(x='Petal Length', y='Sepal Length', data=df, hue='Species')
     plt.title('Petal Length vs Sepal Length', size=16)
     plt.xlabel('Petal Length', size=12)
     plt.ylabel('Sepal Length', size=12)
     plt.legend(loc='best')
-    #plt.savefig('scatterPetalLength_SepalLength.png')
-    plt.show() 
+    plt.savefig('scatterPetalLength_SepalLength.png')
+    #plt.show() #debug
 
 # Sepal Width vs Petal Width
-def scatSWvPW():
+def scatterSepalWidth_PetalWidth():
     plt.figure()
     sns.scatterplot(x='Sepal Width', y='Petal Width', data=df, hue='Species')
     plt.title('Sepal Width vs Petal Width', size=16)
     plt.xlabel('Sepal Width', size=12)
     plt.ylabel('Petal Width', size=12)
     plt.legend(loc='best')
-    #plt.savefig('scatterSepalWidth_PetalWidth.png')
-    plt.show() 
+    plt.savefig('scatterSepalWidth_PetalWidth.png')
+    #plt.show() #debug
 
 # Petal Length vs Sepal Width
-def scatPLvSW():
+def scatterPetalLength_SepalWidth():
     plt.figure()
     sns.scatterplot(x='Petal Length', y='Sepal Width', data=df, hue='Species')
     plt.title('Petal Length vs Sepal Width', size=16)
     plt.xlabel('Petal Length', size=12)
     plt.ylabel('Sepal Width', size=12)
     plt.legend(loc='best')
-    #plt.savefig('scatterPetalLength_SepalWidth.png')
-    plt.show() 
+    plt.savefig('scatterPetalLength_SepalWidth.png')
+    #plt.show() #debug
 
 # Sepal Length vs Petal Width
-def scatSLvPW():
+def scatterSepalLength_PetalWidth():
     plt.figure()
     sns.scatterplot(x='Sepal Length', y='Petal Width', data=df, hue='Species')
     plt.title('Sepal Length vs Petal Width', size=16)
     plt.xlabel('Sepal Length', size=12)
     plt.ylabel('Petal Width', size=12)
     plt.legend(loc='best')
-    #plt.savefig('scatterSepalLength_PetalWidth.png')
-    plt.show() 
+    plt.savefig('scatterSepalLength_PetalWidth.png')
+    #plt.show() #debug
 
-
+# Call scatter functions here
+scatterPetalLength_PetalWidth()
+scatterSepalLength_SepalWidth()
+scatterPetalLength_SepalLength()
+scatterSepalWidth_PetalWidth()
+scatterPetalLength_SepalWidth()
+scatterSepalLength_PetalWidth()
 
 
