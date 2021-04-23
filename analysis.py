@@ -5,14 +5,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd 
 import seaborn as sns 
-import sys 
 
-# Use 1 decimal places in output display
+
+# Adjust settings for output display - 1 decimal place
 pd.set_option("display.precision", 1)
 
+
+# open data set 
 filename = pd.read_csv('iris.csv')
 df = pd.DataFrame(filename)
 #print(df) #debug
+
 
 # SUMMARY TO TXT FILE 
 with open ('summary.txt', 'wt') as f:
@@ -39,6 +42,7 @@ with open ('summary.txt', 'wt') as f:
     f.write('\nFirst 3 Rows of the Iris Virginica Species:\n')
     print(df[df['Species'] == 'virginica'].head(3), file=f)         # prints top 3 rows of virginica
 
+'''
 # HISTOGRAMS
 
 # Petal Length
@@ -86,30 +90,43 @@ histPetalLength()
 histPetalWidth()
 histSepalLength()
 histSepalWidth()
-
-########################################################################################
+'''
 
 # SCATTERS
-# PL VS PW
-fig = plt.figure() # this keeps x and y within each plot
-sns.scatterplot(x="Petal Length", y="Petal Width", data=df, hue='Species')
-plt.legend(loc='best')
-#plt.show() 
-plt.savefig('scatterPetalLength_PetalWidth.png')
+# <<https://matplotlib.org/stable/api/markers_api.html>> gives different symbols on scatter
 
-# SL VS SW
-fig = plt.figure()
-sns.scatterplot(x="Sepal Length", y="Sepal Width", data=df, hue='Species')
-plt.legend(loc='best')
-#plt.show() 
-plt.savefig('scatterSepalLength_SepalWidth.png')
+# Petal Length vs Petal Width
+def scatPLvPW():
+    plt.figure()
+    sns.scatterplot(x='Petal Length', y='Petal Width', data=df, hue='Species')
+    plt.title('Petal Width vs Petal Length', size=16)
+    plt.xlabel('Petal Length', size=12)
+    plt.ylabel('Petal Width', size=12)
+    plt.legend(loc='best')
+    plt.savefig('scatterPetalLength_PetalWidth.png')
+    #plt.show() 
+    
+# Sepal Length vs Sepal Width
+def scatSLvSW():
+    plt.figure()
+    sns.scatterplot(x='Sepal Length', y='Sepal Width', data=df, hue='Species')
+    plt.title('Sepal Width vs Sepal Length', size=16)
+    plt.xlabel('Sepal Length', size=12)
+    plt.ylabel('Sepal Width', size=12)
+    plt.legend(loc='best')
+    #plt.savefig('scatterSepalLength_SepalWidth.png')
+    plt.show() 
 
-# PL VS SL
-fig = plt.figure()
-sns.scatterplot(x="Petal Length", y="Sepal Length", data=df, hue='Species')
-plt.legend(loc='best')
-#plt.show() 
-plt.savefig('scatterPetalLength_SepalLength.png')
+# Petal Length vs Sepal Length
+def scatPLvSL():
+    plt.figure()
+    sns.scatterplot(x='Petal Length', y='Sepal Length', data=df, hue='Species')
+    plt.title('Petal Length vs Sepal Length', size=16)
+    plt.xlabel('Petal Length')
+    plt.ylabel('Sepal Length')
+    plt.legend(loc='best')
+    #plt.savefig('scatterPetalLength_SepalLength.png')
+    plt.show() 
 
 # SW VS PW
 fig = plt.figure()
@@ -131,7 +148,7 @@ sns.scatterplot(x="Sepal Length", y="Petal Width", data=df, hue='Species')
 plt.legend(loc='best')
 #plt.show() 
 plt.savefig('scatterSepalLength_PetalWidth.png')
-
+'''
 
 
 
