@@ -33,6 +33,14 @@ These tables give a brief summary of each species which are also broken down int
 5. Petal Lenght and Sepal Width 
 6. Sepal Lenght and Petal Width  
 &nbsp;
+
+####### TO DO!!!!
+1. FINSIH README
+2. FIGURE OUT HOW TO USE IMAGES FROM A FOLDER WITHIN THIS REPOSITORY 
+3. FINISH FULL REFERENCES 
+
+
+
 This involved setting each of the pairs above to the x and y axis'. using hue........
 # FINISH THIS HERE!!!!! 
 # INCLUDE MATRIX OF SCATTERPLOTS HERE TOO!!! 
