@@ -11,7 +11,7 @@ pd.set_option("display.precision", 1)
 
 filename = pd.read_csv('iris.csv')
 df = pd.DataFrame(filename)
-#print(df)
+#print(df) #debug
 
 df.info()
 #print(df.info())
@@ -23,7 +23,7 @@ species = df['Species'].value_counts()
 # SUMMARY TO TXT FILE 
 with open ('summary.txt', 'wt') as f:
     f.write('The Iris Dataset: Statistics Summary of all Species\n')
-    print(df.describe(), file=f)                                    #gives brief analysis of all 
+    print(df.describe(), file=f)                                    # gives brief analysis of all 
     f.write('\nCount of Different Species:\n')
     print(species, file=f)                                          # counts number of species
     f.write('\nShape of Iris Dataset:\n',)
@@ -35,7 +35,7 @@ with open ('summary.txt', 'wt') as f:
     f.write('\nStatistical Summary of Iris Virginica:\n')
     print(df[df['Species'] == 'virginica'].describe(), file=f)      # prints summary of virginica
     f.write('\nFirst 5 rows of the Iris Dataset:\n')
-    print(df.head(5), file=f)                                       # pinrts top 5 rows
+    print(df.head(5), file=f)                                       # prints top 5 rows
     f.write('\nLast 7 rows of the Iris Dataset:\n')
     print(df.tail(7), file=f)                                       # prints last 7 rows
     f.write('\nLast 4 Rows of Iris Setosa Species:\n')
@@ -46,33 +46,68 @@ with open ('summary.txt', 'wt') as f:
     print(df[df['Species'] == 'virginica'].head(3), file=f)         # prints top 3 rows of virginica
 
 # HISTOGRAMS
-# PL
-fig = plt.figure() # this keeps x and y within each plot
-sns.histplot(x="Petal Length", data=df, hue='Species')
-#plt.legend(loc='best')
-#plt.show() 
-plt.savefig('histogramPetalLength.png')
 
-# SL
+########## hue parameter determines which column in the data frame should be used for colour encoding found below
+########## <<https://seaborn.pydata.org/generated/seaborn.histplot.html?highlight=seaborn%20histplot#seaborn.histplot>>
+#### stack will stack the different species <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>>
+'''
+# Petal Length
+fig = plt.figure() # this keeps x and y within each plot
+#sns.histplot(data=df, x="Petal Length", hue='Species')
+sns.histplot(data=df, x='Petal Length', hue='Species', multiple='stack')
+plt.title = ("Petal Length in cm")
+#plt.xlabel = ("Petal Length")
+#plt.ylabel = ("Frequency")
+plt.show() 
+#plt.savefig('histogramPetalLength.png')
+'''
+def histPetalLength():
+    plt.figure()
+    sns.histplot(data=df, x='Petal Length', hue='Species', multiple='stack')
+    plt.title("Petal Length in cm")
+    plt.xlabel("Petal Length")
+    plt.ylabel("Frequency")
+    plt.legend(loc='best')
+    plt.show()
+
+histPetalLength()
+
+
+
+
+
+
+
+
+# Sepal Length
 fig = plt.figure()
 sns.histplot(x="Sepal Length", data=df, hue='Species')
-#plt.legend(loc='best')
+plt.title = ("Sepal Length in cm")
+plt.xlabel = ("")
+plt.ylabel = ("Frequency")
+plt.legend(loc='best')
 #plt.show() 
-plt.savefig('histogramSepalLength.png')
+#plt.savefig('histogramSepalLength.png')
 
-# PW
+# Petal Width
 fig = plt.figure()
 sns.histplot(x="Petal Width", data=df, hue='Species')
-#plt.legend(loc='best')
+plt.title = ("Petal Width in cm")
+plt.xlabel = ("")
+plt.ylabel = ("Frequency")
+plt.legend(loc='best')
 #plt.show() 
-plt.savefig('histogramPetalWidth.png')
+#plt.savefig('histogramPetalWidth.png')
 
-# SW
+# Sepal Width
 fig = plt.figure()
 sns.histplot(x="Sepal Width", data=df, hue='Species')
-#plt.legend(loc='best')
+plt.title = ("Sepal Width in cm")
+plt.xlabel = ("")
+plt.ylabel = ("Frequency")
+plt.legend(loc='best')
 #plt.show() 
-plt.savefig('histogramSepalWidth.png')    
+#plt.savefig('histogramSepalWidth.png')    
 
 
 # SCATTERS
