@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd 
 import seaborn as sns 
+import sys 
 
 # Use 1 decimal places in output display
 pd.set_option("display.precision", 1)
@@ -13,20 +14,13 @@ filename = pd.read_csv('iris.csv')
 df = pd.DataFrame(filename)
 #print(df) #debug
 
-df.info()
-#print(df.info())
-
-#count of each species
-species = df['Species'].value_counts()  
-#print(species)  #debug
-
 # SUMMARY TO TXT FILE 
 with open ('summary.txt', 'wt') as f:
     f.write('The Iris Dataset: Statistics Summary of all Species\n')
     print(df.describe(), file=f)                                    # gives brief analysis of all 
     f.write('\nCount of Different Species:\n')
-    print(species, file=f)                                          # counts number of species
-    f.write('\nShape of Iris Dataset:\n',)
+    print(df['Species'].value_counts(), file=f)                     # counts number of species
+    f.write('\nShape of Iris Dataset:\n')
     print(df.shape, file=f)                                         # prints shape of data set
     f.write('\nStatistical Summary of Iris Setosa:\n',)
     print(df[df['Species'] == 'setosa'].describe(), file=f)         # prints summary of setosa
@@ -52,51 +46,51 @@ with open ('summary.txt', 'wt') as f:
 #### stack will stack the different species <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>>
 
 
+
 # Petal Length
 def histPetalLength():
     plt.figure()
     sns.histplot(data=df, x='Petal Length', hue='Species', multiple='stack')
-    plt.title('Petal Length in cm')
-    plt.xlabel('Petal Length')
-    plt.ylabel('Frequency')
-    plt.legend(loc='best')
-    #plt.savefig('histogramPetalLength.png')
-    plt.show()
-
-# Sepal Length
-def histSepalLength():
-    plt.figure()
-    sns.histplot(data=df, x='Sepal Length', hue='Species', multiple='stack')
-    plt.title('Sepal Length in cm')
-    plt.xlabel('Sepal Length')
-    plt.ylabel('Frequency')
-    plt.legend(loc='best')
-    #plt.savefig('histogramSepalLength.png')
-    plt.show() 
+    plt.title('Petal Length in cm', size=14)
+    plt.xlabel('Petal Length', size=11)
+    plt.ylabel('Frequency', size=11)
+    plt.savefig('histogramPetalLength.png')
+    #plt.show()
 
 # Petal Width
 def histPetalWidth():
     plt.figure()
     sns.histplot(data=df, x='Petal Width', hue='Species', multiple='stack')
-    plt.title('Petal Width in cm')
-    plt.xlabel('Petal Width')
-    plt.ylabel('Frequency')
-    plt.legend(loc='best')
-    #plt.savefig('histogramPetalWidth.png')
-    plt.show() 
+    plt.title('Petal Width in cm', size=14)
+    plt.xlabel('Petal Width', size=11)
+    plt.ylabel('Frequency', size=11)
+    plt.savefig('histogramPetalWidth.png')
+    #plt.show() 
+
+# Sepal Length
+def histSepalLength():
+    plt.figure()
+    sns.histplot(data=df, x='Sepal Length', hue='Species', multiple='stack')
+    plt.title('Sepal Length in cm', size=14)
+    plt.xlabel('Sepal Length', size=11)
+    plt.ylabel('Frequency', size=11)
+    plt.savefig('histogramSepalLength.png')
+    #plt.show() 
 
 # Sepal Width
 def histSepalWidth():
     plt.figure()
     sns.histplot(data=df, x='Sepal Width', hue='Species', multiple='stack')
-    plt.title('Sepal Width in cm')
-    plt.xlabel('Sepal Width')
-    plt.ylabel('Frequency')
-    plt.legend(loc='best')
-    #plt.savefig('histogramSepalWidth.png')  
-    plt.show()
+    plt.title('Sepal Width in cm', size=14)
+    plt.xlabel('Sepal Width', size=11)
+    plt.ylabel('Frequency', size=11)
+    plt.savefig('histogramSepalWidth.png')  
+    #plt.show()
 
-
+histPetalLength()
+histPetalWidth()
+histSepalLength()
+histSepalWidth()
 
 
 # SCATTERS
