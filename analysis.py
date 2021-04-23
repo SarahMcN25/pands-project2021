@@ -50,64 +50,53 @@ with open ('summary.txt', 'wt') as f:
 ########## hue parameter determines which column in the data frame should be used for colour encoding found below
 ########## <<https://seaborn.pydata.org/generated/seaborn.histplot.html?highlight=seaborn%20histplot#seaborn.histplot>>
 #### stack will stack the different species <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>>
-'''
+
+
 # Petal Length
-fig = plt.figure() # this keeps x and y within each plot
-#sns.histplot(data=df, x="Petal Length", hue='Species')
-sns.histplot(data=df, x='Petal Length', hue='Species', multiple='stack')
-plt.title = ("Petal Length in cm")
-#plt.xlabel = ("Petal Length")
-#plt.ylabel = ("Frequency")
-plt.show() 
-#plt.savefig('histogramPetalLength.png')
-'''
 def histPetalLength():
     plt.figure()
     sns.histplot(data=df, x='Petal Length', hue='Species', multiple='stack')
-    plt.title("Petal Length in cm")
-    plt.xlabel("Petal Length")
-    plt.ylabel("Frequency")
+    plt.title('Petal Length in cm')
+    plt.xlabel('Petal Length')
+    plt.ylabel('Frequency')
     plt.legend(loc='best')
+    #plt.savefig('histogramPetalLength.png')
     plt.show()
 
-histPetalLength()
-
-
-
-
-
-
-
-
 # Sepal Length
-fig = plt.figure()
-sns.histplot(x="Sepal Length", data=df, hue='Species')
-plt.title = ("Sepal Length in cm")
-plt.xlabel = ("")
-plt.ylabel = ("Frequency")
-plt.legend(loc='best')
-#plt.show() 
-#plt.savefig('histogramSepalLength.png')
+def histSepalLength():
+    plt.figure()
+    sns.histplot(data=df, x='Sepal Length', hue='Species', multiple='stack')
+    plt.title('Sepal Length in cm')
+    plt.xlabel('Sepal Length')
+    plt.ylabel('Frequency')
+    plt.legend(loc='best')
+    #plt.savefig('histogramSepalLength.png')
+    plt.show() 
 
 # Petal Width
-fig = plt.figure()
-sns.histplot(x="Petal Width", data=df, hue='Species')
-plt.title = ("Petal Width in cm")
-plt.xlabel = ("")
-plt.ylabel = ("Frequency")
-plt.legend(loc='best')
-#plt.show() 
-#plt.savefig('histogramPetalWidth.png')
+def histPetalWidth():
+    plt.figure()
+    sns.histplot(data=df, x='Petal Width', hue='Species', multiple='stack')
+    plt.title('Petal Width in cm')
+    plt.xlabel('Petal Width')
+    plt.ylabel('Frequency')
+    plt.legend(loc='best')
+    #plt.savefig('histogramPetalWidth.png')
+    plt.show() 
 
 # Sepal Width
-fig = plt.figure()
-sns.histplot(x="Sepal Width", data=df, hue='Species')
-plt.title = ("Sepal Width in cm")
-plt.xlabel = ("")
-plt.ylabel = ("Frequency")
-plt.legend(loc='best')
-#plt.show() 
-#plt.savefig('histogramSepalWidth.png')    
+def histSepalWidth():
+    plt.figure()
+    sns.histplot(data=df, x='Sepal Width', hue='Species', multiple='stack')
+    plt.title('Sepal Width in cm')
+    plt.xlabel('Sepal Width')
+    plt.ylabel('Frequency')
+    plt.legend(loc='best')
+    #plt.savefig('histogramSepalWidth.png')  
+    plt.show()
+
+
 
 
 # SCATTERS
