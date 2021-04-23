@@ -21,25 +21,25 @@ df = pd.DataFrame(filename)
 with open ('summary.txt', 'wt') as f:
     f.write('The Iris Dataset: Statistics Summary of all Species\n')
     print(df.describe(), file=f)                                    # gives brief analysis of all 
-    f.write('\nCount of Different Species:\n')
+    f.write('\n\nCount of Different Species:\n')
     print(df['Species'].value_counts(), file=f)                     # counts number of species
-    f.write('\nShape of Iris Dataset:\n')
+    f.write('\n\nShape of Iris Dataset:\n')
     print(df.shape, file=f)                                         # prints shape of data set
-    f.write('\nStatistical Summary of Iris Setosa:\n',)
+    f.write('\n\nStatistical Summary of Iris Setosa:\n',)
     print(df[df['Species'] == 'setosa'].describe(), file=f)         # prints summary of setosa
-    f.write('\nStatistical Summary of Iris Versicolor:\n')
+    f.write('\n\nStatistical Summary of Iris Versicolor:\n')
     print(df[df['Species'] == 'versicolor'].describe(), file=f)     # prints summary of versicolor      
-    f.write('\nStatistical Summary of Iris Virginica:\n')
+    f.write('\n\nStatistical Summary of Iris Virginica:\n')
     print(df[df['Species'] == 'virginica'].describe(), file=f)      # prints summary of virginica
-    f.write('\nFirst 5 rows of the Iris Dataset:\n')
+    f.write('\n\nFirst 5 rows of the Iris Dataset:\n')
     print(df.head(5), file=f)                                       # prints top 5 rows
-    f.write('\nLast 7 rows of the Iris Dataset:\n')
+    f.write('\n\nLast 7 rows of the Iris Dataset:\n')
     print(df.tail(7), file=f)                                       # prints last 7 rows
-    f.write('\nLast 4 Rows of Iris Setosa Species:\n')
+    f.write('\n\nLast 4 Rows of Iris Setosa Species:\n')
     print(df[df['Species'] == 'setosa'].tail(4), file=f)            # prints last 4 rows of setosa
-    f.write('\nFirst 6 Rows of Iris Versicolor Species:\n')
+    f.write('\n\nFirst 6 Rows of Iris Versicolor Species:\n')
     print(df[df['Species'] == 'versicolor'].head(), file=f)         # prints top 6 rows of versicolor
-    f.write('\nFirst 3 Rows of the Iris Virginica Species:\n')
+    f.write('\n\nFirst 3 Rows of the Iris Virginica Species:\n')
     print(df[df['Species'] == 'virginica'].head(3), file=f)         # prints top 3 rows of virginica
 
 
@@ -169,3 +169,12 @@ scatterPetalLength_SepalWidth()
 scatterSepalLength_PetalWidth()
 
 
+# PAIRPLOT OF DATA SET
+def dfPairplot():
+    plt.figure()
+    sns.pairplot(df, hue='Species',diag_kind='hist', height=1.5) 
+    plt.savefig('pairplot.png')
+    #plt.show() #debug
+
+# Call pairplot function here
+dfPairplot()

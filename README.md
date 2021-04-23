@@ -43,8 +43,8 @@ histogram..................
 #### stack will stack the different species 
 
 
-
-
+<<https://seaborn.pydata.org/generated/seaborn.pairplot.html>> for pairplot using seaborn
+#It’s possible to force marginal histograms ,diag_kind='hist
 
 
 
