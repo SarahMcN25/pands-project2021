@@ -62,17 +62,22 @@ h
 
 i
 - _Iris.csv_, (2018). Kaggle. Available at: <<https://www.kaggle.com/saurabh00007/iriscsv>> [Accessed April, 2021]
+- _Iris flower data set_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Iris_flower_data_set>> [Accessed April, 2021]
+- _Iris (plant)_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Iris_(plant)>> [Accessed April, 2021]
 j
 
 k
 
 
 l
+- _Linear discriminant analysis_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Linear_discriminant_analysis>> [Acccessed April, 2021]
 
 m
+- _Machine learning_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Machine_learning>> [Accessed April, 2021]
 - _matplotlib.pyplot.scatter()_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/>> [Accessed April, 2021]
+- _Matplotlib Histograms_. w3schools. Available at: <<https://www.w3schools.com/python/matplotlib_histograms.asp>> [Accessed April, 2021]
 - _Matplotlib scatterplot_. Pythonspot. Available at: <<https://pythonspot.com/matplotlib-scatterplot/>> [Accessed April, 2021]
-
+- _Matplotlib Scatter_. w3schools. Available at: <<https://www.w3schools.com/python/matplotlib_scatter.asp>> [Accessed April, 2021]
 
 
 
@@ -81,6 +86,7 @@ n
 
 o
 - _Options and settings_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html>> [Accessed April, 2021]
+
 p
 - _pandas.DataFrame.describe_. Pydata. Available at: <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> [Accessed April, 2021]
 - _pandas.DataFrame.head_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>> [Accessed April, 2021]
@@ -89,19 +95,24 @@ p
 - _pandas.plotting.scatter matrix_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html>> [Accessed April, 2021]
 - _pandas.Series.value counts_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>> [Accessed April, 2021]
 - Parker, K. (2020), _Data Analysis in python: Getting started with pandas_. Towardsdatascience. Available at: <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>> [Accessed April, 2021]
+- _Petal_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Petal>> [Accessed April, 2021]
 - _Plotting Histogram in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021]
+- _Python math Module_. w3schools. Available at: <<https://www.w3schools.com/python/module_math.asp>> [Accessed April, 2021]
 
 q
 
 r
 - _Reading CSV files in Python_, (2019). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/reading-csv-files-in-python/#:~:text=1%20USing%20csv.reader%20%28%29%3A%20At%20first%2C%20the%20CSV,a%20CSV%20file%20using%20pandas%20library%20functions.%20>> [Accessed April, 2021]
+- _Ronald Fisher_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Ronald_Fisher>> [Accessed April, 2021]
 
 s
 - _seaborn.histplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.histplot.html>> [Accessed April, 2021]
 - _seaborn.lmplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>> [Accessed April, 2021]
+- _Sepal_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Sepal>> [Accessed April, 2021] 
 - Sharma, P. (2021), _Seaborn Histogrma Plot using histplot()_. Machinelearningknowledge. Available at: <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>> [Accessed April, 2021]
 - Solomon, B. _Pandas GroupBy: Your Guide to Grouping Data in Python_. Realpython. Available at: <<https://realpython.com/pandas-groupby/>> [Accessed April, 2021]
 - Solomon, B. _Python Histogram Plotting: NumPy, Matplotlib, Pandas & Seaborn_. Realpython. Available at: <<https://realpython.com/python-histograms/>> [Accessed April, 2021]
+- _Support-vector machine_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Support-vector_machine>> [Accessed April, 2021]
 - Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
 
 t
@@ -113,17 +124,10 @@ v
 - _Visualization_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html >> [Accessed April, 2021]
 
 w
-- <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
-- <<https://en.wikipedia.org/wiki/Iris_(plant)>>
-- <<https://en.wikipedia.org/wiki/Linear_discriminant_analysis>>
-- <<https://en.wikipedia.org/wiki/Machine_learning>>
-- <<https://en.wikipedia.org/wiki/Petal>>
-- <<https://en.wikipedia.org/wiki/Ronald_Fisher>>
-- <<https://en.wikipedia.org/wiki/Sepal>>
-- <<https://en.wikipedia.org/wiki/Support-vector_machine>>
-- <<https://www.w3schools.com/python/matplotlib_histograms.asp>>
-- <<https://www.w3schools.com/python/matplotlib_scatter.asp>>
-- <<https://www.w3schools.com/python/module_math.asp>>
+
+
+
+
 - <<https://www.w3schools.com/python/python_file_handling.asp>>
 - <<https://www.w3schools.com/python/python_functions.asp>>
 x
