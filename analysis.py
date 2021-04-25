@@ -8,7 +8,7 @@ import seaborn as sns
 
 
 # Adjust settings for output display - 1 decimal place
-pd.set_option("display.precision", 1)
+pd.set_option('display.precision', 1)
 
 
 # open data set 
