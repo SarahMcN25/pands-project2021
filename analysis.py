@@ -1,4 +1,4 @@
-# This is a program which analysis' Ronald Fisher's Iris data set
+# This program analysis' Ronald Fisher's Iris data set
 # Author: Sarah McNelis
 
 import numpy as np 
@@ -92,7 +92,7 @@ histSepalLength()
 histSepalWidth()
 
 
-# SCATTERS
+# SCATTERPLOTS
 
 # Petal Length vs Petal Width
 def scatterPetalLength_PetalWidth():
