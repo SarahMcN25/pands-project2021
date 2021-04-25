@@ -15,8 +15,7 @@ These records are broken down into three species: Iris-Setosa, Iris-Versicolor a
 - The first step of this project was reseaching the Iris data set. I downloaded the data set in a csv file format from Kaggle. I then decided to explore the different attributes of the data set. I found some images online which clarify which part of Iris flower is the sepal and which part is the petal. Sepals are usually green and offers support and protection to the petal. However, the sepal of the Iris flower is typically a shade of purple. The role of the petal is to surround and protect the reproductive part of the flower.
 # ![sepalPetal](imageSepalPetal.jpg)
 - The second step of this project was developing the code. This required importing various modules required to complete the analysis. Numpy and matplotlib are used for plotting the analysis, seaborn is a good tool for visualisation when plotting and pandas is used for analysing the data frame. After this I decided to do a bit of housekeeping. Pydata descibes numerous settings that can be changes using pandas. I set the program to only allow one decimal place in the output display with one line of code; pd.set_option('display.precision', 1). The one refers to the amount of floating points you wish to allow. I have chosen one decimal place as it is neater and easier to read.
-Next I opened the csv file in read mode in order to begin the analysis. 
-- Next I began writing a summary to a text file named summary.txt. I did this opening the file in write mode. I then discovered the function describe() which as you can see below gives a statical summary of the data frame in tabular form.
+- Next I opened the csv file in write mode in order to begin the analysis. I began by opening the text file in write mode. w3schools explains the different modes that can be used when opening a file. The 'w' stands for write mode and the 't' referes to text mode as opposed to binary. At this point I havee also given a name to the file in which I am writing the analysis to; summary.txt. After this, I began investigating the different ways I could analysise this data set. My first discovery was the function describe(). Pydata explains the parameters and purpose of this function. As you can see from the image below, using describe() gives a statical summary of the data frame in tabular form.
 # ![describe()](imageDescribeAll.jpg)
 I then used the variable species which gives a count of each of the different species within the data frame. The shape() function gives the shape of the data frame. In this case it reported the shape as (150,5) which means it consists of 150 rows and 5 columns. Then I decided to break down the statical analysis for each of the three species. 
 # ![describe()](imageDescribeEach.jpg)
@@ -111,8 +110,10 @@ p
 - <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>>
 - <<https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html >> 
 - <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html>>
+- <<https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html>>
 - <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
 - <<https://pythonspot.com/matplotlib-scatterplot/>>
+
 
 q
 
