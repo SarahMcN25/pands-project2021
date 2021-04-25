@@ -24,15 +24,9 @@ Subsequently, I decided to break down the statical analysis for each of the thre
 # ![describe()](imageDescribeEach.jpg)
  I then decided to select the first five rows form the top of the data frame using the head() function and also the last seven rows from the bottom using the tail() function as suggested by pydata. Afterward, I discovered that I could not only select the head and tail of the whole data frame but also the three species specifically like I did with the describle function. As you can see in the below image there are numerous ways of breaking down and analysing data frames. 
 # ![headAndTail](imageHead_Tail.jpg)
-- The next step involved creating histograms of each variable which I have saved as png files in this respository. I decided to create a histogram for each of the attributes: sepal length, sepal width, petal length, petal width. Within each of these histograms I choose to break down the results showing each attribute of each species as you can see below. Sharma(2021) explains how to use hue for layered categorisation of histograms in the seaborn module. I have done this by passing in the attribute Species when creating the histograms. 
-
-
-
-This alows us to analysise each attribute of each species. 
+- The next step involved plotting this analysis. First I created a histogram for each of the attributes; sepal length, sepal width, petal length, petal width. I have saved these histograms as png files in this respository. Within each of these histograms I choose to break down the results showing each attribute of each species as you can see in the below image. Sharma(2021) explains how to use hue for layered categorisation of histograms in the seaborn module. I have done this by passing in the attribute Species when creating the histograms; hue='Species'. This alows us to analysise each attribute of each species. Sharma(2021) also explains that using the feature 'stack' can allow for better visualization of each category. This is why I also added the parameter; multiple='stack', when creating the histograms. 
 # ![histograms](imageOfHistograms.jpg)
-#### **ENTER IMAGE OF 4 HISTOGRAMS HERE!!!!!!!!! 
-#### Mention something about matrix??
-
+As we can see from this image these features are invaluable in allowing us to analysis the data of each attribute in this data frame. 
 - Finally, the last step of this analysis is creating a scatterplot of each pair of variables. For this part of the task I decided to compare the following:
 1. Petal Lenght and Petal Width 
 2. Sepal Lenght and Sepal Width
@@ -41,6 +35,9 @@ This alows us to analysise each attribute of each species.
 5. Petal Lenght and Sepal Width 
 6. Sepal Lenght and Petal Width  
 &nbsp;
+
+#### Mention something about matrix??
+
 
 ####### TO DO!!!!
 1. FINSIH README
