@@ -53,7 +53,7 @@ d
 e
 
 f
-
+- Fincher, J. _Reading and Writing CSV Files in Python_. Realpython. Available at: <<https://realpython.com/python-csv/#:~:text=Reading%20from%20a%20CSV%20file%20is%20done%20using,does%20the%20heavy%20lifting.%20Here%E2%80%99s%20the%20employee_birthday.txt%20file%3A>> [Accessed April, 2021]
 g
 
 
@@ -71,6 +71,7 @@ l
 
 m
 - _matplotlib.pyplot.scatter()_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/>> [Accessed April, 2021]
+- _Matplotlib scatterplot_. Pythonspot. Available at: <<https://pythonspot.com/matplotlib-scatterplot/>> [Accessed April, 2021]
 
 
 
@@ -79,23 +80,24 @@ m
 n
 
 o
-
+- _Options and settings_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html>> [Accessed April, 2021]
 p
 - _pandas.DataFrame.describe_. Pydata. Available at: <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> [Accessed April, 2021]
 - _pandas.DataFrame.head_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>> [Accessed April, 2021]
 - _pandas.DataFrame.shape_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html>> [Accessed April, 2021]
 - _pandas.DataFrame.tail_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html>> [Accessed April, 2021]
-
-- _Plotting Histogrma in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021]
-
-
-
+- _pandas.plotting.scatter matrix_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html>> [Accessed April, 2021]
+- _pandas.Series.value counts_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>> [Accessed April, 2021]
+- _Plotting Histogram in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021]
 
 
-- <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html>>
-- <<https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html>>
-- <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
-- <<https://pythonspot.com/matplotlib-scatterplot/>>
+
+
+
+
+
+
+
 
 
 q
@@ -105,12 +107,14 @@ r
 
 
 
-- <<https://realpython.com/pandas-groupby/>>
-- <<https://realpython.com/python-csv/#:~:text=Reading%20from%20a%20CSV%20file%20is%20done%20using,does%20the%20heavy%20lifting.%20Here%E2%80%99s%20the%20employee_birthday.txt%20file%3A>>
+
+
+
 - <<https://realpython.com/python-histograms/>>
 
 s
 - Sharma, P. (2021), _Seaborn Histogrma Plot using histplot()_. Machinelearningknowledge. Available at: <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>> [Accessed April, 2021]
+- Solomon, B. _Pandas GroupBy: Your Guide to Grouping Data in Python_. Realpython. Available at: <<https://realpython.com/pandas-groupby/>> [Accessed April, 2021]
 - Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
 
 - <<https://seaborn.pydata.org/examples/index.html>>
