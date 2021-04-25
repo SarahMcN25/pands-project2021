@@ -48,15 +48,15 @@ b
 c
 
 d
-- <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>>
+- _Descriptive or Summary Statistics in Python Pandas - Describe()_, (2021). Datasciencemadesimple. Available at: <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>> [Accessed April, 2021]
 
 e
 
 f
 
 g
-- <<https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/>>
-- <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>>
+
+
 
 - <<https://www.geeksforgeeks.org/reading-csv-files-in-python/#:~:text=1%20USing%20csv.reader%20%28%29%3A%20At%20first%2C%20the%20CSV,a%20CSV%20file%20using%20pandas%20library%20functions.%20>>
 
@@ -73,12 +73,18 @@ k
 l
 
 m
+- _matplotlib.pyplot.scatter()_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/>> [Accessed April, 2021]
+
+
 - <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>>
 n
 
 o
 
 p
+- _Plotting Histogrma in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021]
+
+
 - <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>>
 - <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html>>
 - <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html>>
@@ -99,9 +105,10 @@ r
 
 s
 - <<https://seaborn.pydata.org/examples/index.html>>
--  <<https://seaborn.pydata.org/generated/seaborn.histplot.html>>
+- <<https://seaborn.pydata.org/generated/seaborn.histplot.html>>
 - <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>>
 - <<https://www.statology.org/mean-of-column-pandas/>>
+- Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
 
 t
 - <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
@@ -109,7 +116,7 @@ t
 u
 
 v
-
+- VanderPlas, J 2016, A Whirlwind Tour of Python, O’Reilly Medica Inc, Sebastopol.
 w
 - <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
 - <<https://en.wikipedia.org/wiki/Iris_(plant)>>
@@ -123,10 +130,9 @@ w
 - <<https://www.w3schools.com/python/matplotlib_scatter.asp>>
 - <<https://www.w3schools.com/python/module_math.asp>>
 - <<https://www.w3schools.com/python/python_file_handling.asp>>
+- <<https://www.w3schools.com/python/python_functions.asp>>
 x
-https://www.w3schools.com/python/python_functions.asp 
-Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
-VanderPlas, J 2016, A Whirlwind Tour of Python, O’Reilly Medica Inc, Sebastopol.
+ 
 <<https://seaborn.pydata.org/generated/seaborn.pairplot.html>>
 y
 
