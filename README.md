@@ -26,48 +26,22 @@ Subsequently, I decided to break down the statical analysis for each of the thre
 # ![headAndTail](imageHead_Tail.jpg)
 - The next step involved plotting this analysis. For this I have chose to use a def statement when writing the different plots. I have chosent to do this as it is easier to organise my code and the functions can be easily accessed and used again (VanderPlas 2016, p. 41-42). The two most important factors to remember when using functions is that the local variables contained within the function cannot be called outside of that function and that a function does nothing unless it is called (Sweigart 2015, p. 61-67).
  -First I created a histogram for each of the attributes; sepal length, sepal width, petal length, petal width. I have saved these histograms as png files in this respository. Within each of these histograms I choose to break down the results showing each attribute of each species as you can see in the below image. Sharma(2021) explains how to use hue for layered categorisation of histograms in the seaborn module. I have done this by passing in the attribute Species when creating the histograms; hue='Species'. This alows us to analysise each attribute of each species. Sharma(2021) also explains that using the feature 'stack' can allow for better visualization of each category. This is why I also added the parameter; multiple='stack', when creating the histograms. As we can see from this image these features are invaluable in allowing us to analysis the data of each attribute in this data frame. 
-# ![histograms](imageOfHistograms.jpg)
-- Finally, the last step of this analysis was creating a scatterplot for each pair of variables. For this part of the task I decided to compare the following attributes:
+# ![histograms](image_Histograms.jpg)
+- Next step was to create a scatterplot for each pair of variables. For this part of the task I decided to compare the following attributes:
     1. Petal Lenght and Petal Width 
     2. Sepal Lenght and Sepal Width
     3. Petal Lenght and Sepal Lenght
     4. Sepal Width and Petal Width
     5. Petal Lenght and Sepal Width 
     6. Sepal Lenght and Petal Width  
-&nbsp;
+
 For each of these plots I have assigned each attribute to the x and y axis'. I also deicided to the hue feature again for the scatterplots. This will breakdown of the species when comparing each pair of variables. Similarily to the histograms I have used seaborn when creating the scatterplots as it allows for better visualisation. 
-# ![scatterplots](imageofScatters.jpg)
-
-
-
-#### Mention something about matrix??
-
-
-####### TO DO!!!!
-1. FINSIH README
-2. FIGURE OUT HOW TO USE IMAGES FROM A FOLDER WITHIN THIS REPOSITORY 
-3. FINISH FULL REFERENCES 
-
-
-
-This involved setting each of the pairs above to the x and y axis'. using hue........
-# FINISH THIS HERE!!!!! 
-# INCLUDE MATRIX OF SCATTERPLOTS HERE TOO!!! 
-
-histogram..................
-########## hue parameter determines which column in the data frame should be used for colour encoding found below
-########## 
-#### stack will stack the different species 
-
-
-<<https://seaborn.pydata.org/generated/seaborn.pairplot.html>> for pairplot using seaborn
-#It’s possible to force marginal histograms ,diag_kind='hist
-
-
-
+# ![scatterplots](image_Scatters.jpg)
+- Finally, the last step of this program was developing another function to create a pairplot for this dataset. Pydata explains that searborn pairplot composes a grid of axes sharing each numeric variable in the data set across the y-axis in a single row and the x-axis across a single column. Again, I have chosen to use the feature hue in order to plot the different species in different colors. This pairplot will automatically form scatterplots and I have also chosen to use a histogram for the diagonal subplots by adding the element; diag_kind='hist'. This can be clearly seen in the below image.  
+# ![pairplot](imagePairplot.jpg)
 &nbsp;
 ### **Conclusion** 
-After completing data analysis of Fisher's Iris data set I have determined that there is a wealth of information available on this particular data frame. I used a substantial amount of resources in my research and development of my python program. There are numourous ways that this data set can be analysied and manipulated.  
+After completing the data analysis of Fisher's Iris data set I have determined that there is a wealth of information available on this particular data frame. I used a substantial amount of resources in my research and development of my python program. There are numourous ways that this data set can be analysied and manipulated. In my opinon, the most noticable aspect of my analysis is the distinct difference between the Iris-Setosa attributes in comparassion to the Iris-Versicolor and the Iris-Virginica. When you consider the various plots, the Iris-Versicolor and the Iris-Virginica seem to be closer in range than the Iris-Setosa. Nonetheless, all three species are divisible from one another. However, this may be another reason that Fisher's Iris data set is so popular amongst researchers in the data analyitics field.  
 &nbsp;
 ## **References/Resources used:**
 a
@@ -156,6 +130,7 @@ x
 https://www.w3schools.com/python/python_functions.asp 
 Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
 VanderPlas, J 2016, A Whirlwind Tour of Python, O’Reilly Medica Inc, Sebastopol.
+<<https://seaborn.pydata.org/generated/seaborn.pairplot.html>>
 y
 
 z
