@@ -1,5 +1,5 @@
 ## **PANDS-PROJECT 2021**
-### Author: Sarah McNelis
+### Author: Sarah McNelis - G00398343
 &nbsp;
 ### **Introduction** 
 The aim of this project is to research, investigate and analyse Fisher's Iris data set. I have written a program in python to complete this task. I have also included a full list of references and resources used. First let's take a look at the man behind the data set.
