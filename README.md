@@ -58,17 +58,14 @@ g
 
 
 
-- <<https://www.geeksforgeeks.org/reading-csv-files-in-python/#:~:text=1%20USing%20csv.reader%20%28%29%3A%20At%20first%2C%20the%20CSV,a%20CSV%20file%20using%20pandas%20library%20functions.%20>>
-
 h
 
 i
-
+- _Iris.csv_, (2018). Kaggle. Available at: <<https://www.kaggle.com/saurabh00007/iriscsv>> [Accessed April, 2021]
 j
 
 k
-- <<https://www.kaggle.com/arshid/iris-flower-dataset>>
-- <<https://www.kaggle.com/saurabh00007/iriscsv>>
+
 
 l
 
@@ -76,7 +73,9 @@ m
 - _matplotlib.pyplot.scatter()_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/>> [Accessed April, 2021]
 
 
-- <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>>
+
+
+
 n
 
 o
@@ -99,16 +98,22 @@ p
 q
 
 r
+- _Reading CSV files in Python_, (2019). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/reading-csv-files-in-python/#:~:text=1%20USing%20csv.reader%20%28%29%3A%20At%20first%2C%20the%20CSV,a%20CSV%20file%20using%20pandas%20library%20functions.%20>> [Accessed April, 2021]
+
+
+
 - <<https://realpython.com/pandas-groupby/>>
 - <<https://realpython.com/python-csv/#:~:text=Reading%20from%20a%20CSV%20file%20is%20done%20using,does%20the%20heavy%20lifting.%20Here%E2%80%99s%20the%20employee_birthday.txt%20file%3A>>
 - <<https://realpython.com/python-histograms/>>
 
 s
+- Sharma, P. (2021), _Seaborn Histogrma Plot using histplot()_. Machinelearningknowledge. Available at: <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>> [Accessed April, 2021]
+- Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
+
 - <<https://seaborn.pydata.org/examples/index.html>>
 - <<https://seaborn.pydata.org/generated/seaborn.histplot.html>>
 - <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>>
 - <<https://www.statology.org/mean-of-column-pandas/>>
-- Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
 
 t
 - <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>>
