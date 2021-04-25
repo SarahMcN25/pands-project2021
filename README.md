@@ -81,14 +81,17 @@ n
 o
 
 p
+- _pandas.DataFrame.describe_. Pydata. Available at: <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> [Accessed April, 2021]
+- _pandas.DataFrame.head_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>> [Accessed April, 2021]
+- _pandas.DataFrame.shape_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html>> [Accessed April, 2021]
+- _pandas.DataFrame.tail_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html>> [Accessed April, 2021]
+
 - _Plotting Histogrma in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021]
 
 
-- <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>>
-- <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html>>
-- <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html>>
-- <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>>
-- <<https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html >> 
+
+
+
 - <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html>>
 - <<https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html>>
 - <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>>
@@ -122,6 +125,7 @@ u
 
 v
 - VanderPlas, J 2016, A Whirlwind Tour of Python, O’Reilly Medica Inc, Sebastopol.
+- _Visualization_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html >> [Accessed April, 2021]
 w
 - <<https://en.wikipedia.org/wiki/Iris_flower_data_set>>
 - <<https://en.wikipedia.org/wiki/Iris_(plant)>>
