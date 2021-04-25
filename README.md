@@ -36,7 +36,7 @@ Subsequently, I decided to break down the statical analysis for each of the thre
     6. Sepal Lenght and Petal Width  
 &nbsp;
 For each of these plots I have assigned each attribute to the x and y axis'. I also deicided to the hue feature again for the scatterplots. This will breakdown of the species when comparing each pair of variables. Similarily to the histograms I have used seaborn when creating the scatterplots as it allows for better visualisation. 
-# ![scatterplots](imageOfScatters.jpg)
+# ![scatterplots](imageofScatters.jpg)
 
 
 
