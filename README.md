@@ -21,7 +21,12 @@ I then used the variable species which gives a count of each of the different sp
 # ![describe()](imageDescribeEach.jpg)
 These tables give a brief summary of each species which are also broken down into four columns showing the sepal length, sepal width, petal length and petal width. I then decided to select the first five rows form the top of the data frame using the head() function and also the last seven rows from the bottom using the tail() function. I subsequently discovered that I could not only select the head and tail of the whole data frame but also the three species specifically as I did with the describle function. As can be seen in the below image there are numerous ways of breaking down and analysing data frames. 
 # ![headAndTail](imageHeadAndTail.jpg)
-- The next step involved creating histograms of each variable which I have saves as png files in this respository. I decided to creat a histogram for each of the attributes: sepal length, sepal width, petal length, petal width. Within each of these histograms I choose to break down the results showing each attribute of each species as you can see below. 
+- The next step involved creating histograms of each variable which I have saved as png files in this respository. I decided to create a histogram for each of the attributes: sepal length, sepal width, petal length, petal width. Within each of these histograms I choose to break down the results showing each attribute of each species as you can see below. Sharma(2021) explains how to use hue for layered categorisation of histograms in the seaborn module. I have done this by passing in the attribute Species when creating the histograms. 
+
+
+
+This alows us to analysise each attribute of each species. 
+# ![histograms](imageOfHistograms.jpg)
 #### **ENTER IMAGE OF 4 HISTOGRAMS HERE!!!!!!!!! 
 #### Mention something about matrix??
 
