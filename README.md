@@ -34,7 +34,7 @@ These records are broken down into three species: Iris-Setosa, Iris-Versicolor a
     5. Petal Length and Sepal Width 
     6. Sepal Length and Petal Width  
 
-For each of these plots I have assigned an attribute to the x and y axes'. I have also used the hue feature again for the scatterplots. This will breakdown of the species when comparing each pair of variables. Similarly, to the histograms I have used seaborn when creating the scatterplots as it allows for better visualisation. This makes it easier to compare each pair of variables.  
+For each of these plots I have assigned an attribute to the x and y axes. I have also used the hue feature again for the scatterplots. This will breakdown of the species when comparing each pair of variables. Similarly, to the histograms I have used seaborn when creating the scatterplots as it allows for better visualisation. This makes it easier to compare each pair of variables.  
 # ![scatterplots](image_Scatters.jpg)
 - Finally, the last step of this program was developing another function to create a pairplot for this dataset. Pydata explains that searborn pairplot composes a grid of axes sharing each numeric variable in the data set across the y-axis in a single row and the x-axis across a single column. Again, I have chosen to use the feature hue in order to plot the different species in different colours. This pairplot will automatically form scatterplots and I have also chosen to use a histogram for the diagonal subplots by adding the element; diag_kind='hist'. This can be clearly seen in the below image.  
 # ![pairplot](imagePairplot.jpg)
