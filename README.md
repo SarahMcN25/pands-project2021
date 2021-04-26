@@ -52,7 +52,7 @@ After completing the data analysis of Fisher's Iris data set I have determined t
 - _Matplotlib Histograms_. w3schools. Available at: <<https://www.w3schools.com/python/matplotlib_histograms.asp>> [Accessed April, 2021]
 - _Matplotlib scatterplot_. Pythonspot. Available at: <<https://pythonspot.com/matplotlib-scatterplot/>> [Accessed April, 2021]
 - _Matplotlib Scatter_. w3schools. Available at: <<https://www.w3schools.com/python/matplotlib_scatter.asp>> [Accessed April, 2021]
-- o'Leary, N. (2019), _Project-2019_. Github. Available at: <<https://github.com/NiamhOL/Project-2019>> [Accessed April, 2021]
+- O'Leary, N. (2019), _Project-2019_. Github. Available at: <<https://github.com/NiamhOL/Project-2019>> [Accessed April, 2021]
 - _Options and settings_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html>> [Accessed April, 2021]
 - _pandas.DataFrame.describe_. Pydata. Available at: <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> [Accessed April, 2021]
 - _pandas.DataFrame.head_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>> [Accessed April, 2021]
