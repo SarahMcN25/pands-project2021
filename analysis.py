@@ -1,4 +1,6 @@
-# This program analysis' Ronald Fisher's Iris data set
+# This program analyses Ronald Fisher's Iris data set
+# It reads in the data frame and outputs a summary to a text file
+# Then plots the analysis using histograms and scatterplots
 # Author: Sarah McNelis
 
 import numpy as np 
