@@ -71,18 +71,18 @@ After completing the data analysis of Fisher's Iris data set I have determined t
 - _Plotting Histogram in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021]
 - _Python File Open_. w3schools. Available at: <<https://www.w3schools.com/python/python_file_handling.asp>>
 - <<https://www.w3schools.com/python/python_functions.asp>> [Accessed April, 2021]
-- _Python math Module_. w3schools. Available at: <<https://www.w3schools.com/python/module_math.asp>> [Accessed April, 2021]
-- _Reading CSV files in Python_, (2019). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/reading-csv-files-in-python/#:~:text=1%20USing%20csv.reader%20%28%29%3A%20At%20first%2C%20the%20CSV,a%20CSV%20file%20using%20pandas%20library%20functions.%20>> [Accessed April, 2021]
-- _Ronald Fisher_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Ronald_Fisher>> [Accessed April, 2021]
-- _seaborn.histplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.histplot.html>> [Accessed April, 2021]
+- _Python math Module_. w3schools. Available at: <<https://www.w3schools.com/python/module_math.asp>> [Accessed April, 2021].
+- _Reading CSV files in Python_, (2019). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/reading-csv-files-in-python/#:~:text=1%20USing%20csv.reader%20%28%29%3A%20At%20first%2C%20the%20CSV,a%20CSV%20file%20using%20pandas%20library%20functions.%20>> [Accessed April, 2021].
+- _Ronald Fisher_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Ronald_Fisher>> [Accessed April, 2021].
+- _seaborn.histplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.histplot.html>> [Accessed April, 2021].
 - _seaborn.lmplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>> [Accessed April, 2021]
-- _seaborn.pairplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.pairplot.html>> [Accessed April, 2021]
-- _Sepal_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Sepal>> [Accessed April, 2021] 
-- Sharma, P. (2021), _Seaborn Histogram Plot using histplot()_. Machinelearningknowledge. Available at: <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>> [Accessed April, 2021]
-- Solomon, B. _Pandas GroupBy: Your Guide to Grouping Data in Python_. Realpython. Available at: <<https://realpython.com/pandas-groupby/>> [Accessed April, 2021]
-- Solomon, B. _Python Histogram Plotting: NumPy, Matplotlib, Pandas & Seaborn_. Realpython. Available at: <<https://realpython.com/python-histograms/>> [Accessed April, 2021]
-- _Support-vector machine_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Support-vector_machine>> [Accessed April, 2021]
+- _seaborn.pairplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.pairplot.html>> [Accessed April, 2021].
+- _Sepal_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Sepal>> [Accessed April, 2021].
+- Sharma, P. (2021), _Seaborn Histogram Plot using histplot()_. Machinelearningknowledge. Available at: <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>> [Accessed April, 2021].
+- Solomon, B. _Pandas GroupBy: Your Guide to Grouping Data in Python_. Realpython. Available at: <<https://realpython.com/pandas-groupby/>> [Accessed April, 2021].
+- Solomon, B. _Python Histogram Plotting: NumPy, Matplotlib, Pandas & Seaborn_. Realpython. Available at: <<https://realpython.com/python-histograms/>> [Accessed April, 2021].
+- _Support-vector machine_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Support-vector_machine>> [Accessed April, 2021].
 - Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
 - VanderPlas, J 2016, A Whirlwind Tour of Python, O’Reilly Medica Inc, Sebastopol.
-- _Visualization_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html >> [Accessed April, 2021]
-- Zach (2020), _How to Calculate the Mean of Columns in Pandas_. Statology. Available at: <<https://www.statology.org/mean-of-column-pandas/>> [Accessed April, 2021]
+- _Visualization_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html >> [Accessed April, 2021].
+- Zach (2020), _How to Calculate the Mean of Columns in Pandas_. Statology. Available at: <<https://www.statology.org/mean-of-column-pandas/>> [Accessed April, 2021].
