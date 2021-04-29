@@ -66,16 +66,16 @@ After completing the data analysis of Fisher's Iris data set I have determined t
 - _pandas.DataFrame.tail_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html>> [Accessed April, 2021]
 - _pandas.plotting.scatter matrix_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html>> [Accessed April, 2021]
 - _pandas.Series.value counts_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>> [Accessed April, 2021]
-- Parker, K. (2020), _Data Analysis in python: Getting started with pandas_. Towardsdatascience. Available at: <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>> [Accessed April, 2021]
-- _Petal_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Petal>> [Accessed April, 2021]
-- _Plotting Histogram in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021]
+- Parker, K. (2020), _Data Analysis in python: Getting started with pandas_. Towardsdatascience. Available at: <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>> [Accessed April, 2021].
+- _Petal_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Petal>> [Accessed April, 2021].
+- _Plotting Histogram in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021].
 - _Python File Open_. w3schools. Available at: <<https://www.w3schools.com/python/python_file_handling.asp>>
-- <<https://www.w3schools.com/python/python_functions.asp>> [Accessed April, 2021]
+- <<https://www.w3schools.com/python/python_functions.asp>> [Accessed April, 2021].
 - _Python math Module_. w3schools. Available at: <<https://www.w3schools.com/python/module_math.asp>> [Accessed April, 2021].
 - _Reading CSV files in Python_, (2019). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/reading-csv-files-in-python/#:~:text=1%20USing%20csv.reader%20%28%29%3A%20At%20first%2C%20the%20CSV,a%20CSV%20file%20using%20pandas%20library%20functions.%20>> [Accessed April, 2021].
 - _Ronald Fisher_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Ronald_Fisher>> [Accessed April, 2021].
 - _seaborn.histplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.histplot.html>> [Accessed April, 2021].
-- _seaborn.lmplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>> [Accessed April, 2021]
+- _seaborn.lmplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.lmplot.html>> [Accessed April, 2021].
 - _seaborn.pairplot_. Pydata. Available at: <<https://seaborn.pydata.org/generated/seaborn.pairplot.html>> [Accessed April, 2021].
 - _Sepal_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Sepal>> [Accessed April, 2021].
 - Sharma, P. (2021), _Seaborn Histogram Plot using histplot()_. Machinelearningknowledge. Available at: <<https://machinelearningknowledge.ai/seaborn-histogram-plot-using-histplot-tutorial-for-beginners/>> [Accessed April, 2021].
