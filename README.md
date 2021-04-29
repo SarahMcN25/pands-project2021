@@ -76,7 +76,7 @@ After completing the data analysis of Fisher's Iris data set I have determined t
 - Solomon, B. _Pandas GroupBy: Your Guide to Grouping Data in Python_. Realpython. Available at: <<https://realpython.com/pandas-groupby/>> [Accessed April, 2021]
 - Solomon, B. _Python Histogram Plotting: NumPy, Matplotlib, Pandas & Seaborn_. Realpython. Available at: <<https://realpython.com/python-histograms/>> [Accessed April, 2021]
 - _Support-vector machine_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Support-vector_machine>> [Accessed April, 2021]
-- Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco.
-- VanderPlas, J 2016, A Whirlwind Tour of Python, O’Reilly Medica Inc, Sebastopol.
+- Sweigart, A 2015, Automate The Boring Stuff with Python, William Pollock, San Francisco
+- VanderPlas, J 2016, A Whirlwind Tour of Python, O’Reilly Medica Inc, Sebastopol
 - _Visualization_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html >> [Accessed April, 2021]
 - Zach (2020), _How to Calculate the Mean of Columns in Pandas_. Statology. Available at: <<https://www.statology.org/mean-of-column-pandas/>> [Accessed April, 2021]
