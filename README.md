@@ -49,23 +49,23 @@ After completing the data analysis of Fisher's Iris data set I have determined t
 ## **References/Resources used:**
 - _Descriptive or Summary Statistics in Python Pandas - Describe()_, (2021). Datasciencemadesimple. Available at: <<https://www.datasciencemadesimple.com/descriptive-summary-statistics-python-pandas/>> [Accessed April, 2021]
 - Fincher, J. _Reading and Writing CSV Files in Python_. Realpython. Available at: <<https://realpython.com/python-csv/#:~:text=Reading%20from%20a%20CSV%20file%20is%20done%20using,does%20the%20heavy%20lifting.%20Here%E2%80%99s%20the%20employee_birthday.txt%20file%3A>> [Accessed April, 2021]
-- _Iris.csv_, (2018). Kaggle. Available at: <<https://www.kaggle.com/saurabh00007/iriscsv>> [Accessed April, 2021]
-- _Iris flower data set_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Iris_flower_data_set>> [Accessed April, 2021]
-- _Iris (plant)_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Iris_(plant)>> [Accessed April, 2021]
-- _Linear discriminant analysis_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Linear_discriminant_analysis>> [Accessed April, 2021]
-- _Machine learning_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Machine_learning>> [Accessed April, 2021]
-- _matplotlib.pyplot.scatter()_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/>> [Accessed April, 2021]
-- _Matplotlib Histograms_. w3schools. Available at: <<https://www.w3schools.com/python/matplotlib_histograms.asp>> [Accessed April, 2021]
-- _Matplotlib scatterplot_. Pythonspot. Available at: <<https://pythonspot.com/matplotlib-scatterplot/>> [Accessed April, 2021]
-- _Matplotlib Scatter_. w3schools. Available at: <<https://www.w3schools.com/python/matplotlib_scatter.asp>> [Accessed April, 2021]
-- O'Leary, N. (2019), _Project-2019_. GitHub. Available at: <<https://github.com/NiamhOL/Project-2019>> [Accessed April, 2021]
-- _Options and settings_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html>> [Accessed April, 2021]
-- _pandas.DataFrame.describe_. Pydata. Available at: <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> [Accessed April, 2021]
-- _pandas.DataFrame.head_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>> [Accessed April, 2021]
-- _pandas.DataFrame.shape_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html>> [Accessed April, 2021]
-- _pandas.DataFrame.tail_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html>> [Accessed April, 2021]
-- _pandas.plotting.scatter matrix_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html>> [Accessed April, 2021]
-- _pandas.Series.value counts_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>> [Accessed April, 2021]
+- _Iris.csv_, (2018). Kaggle. Available at: <<https://www.kaggle.com/saurabh00007/iriscsv>> [Accessed April, 2021].
+- _Iris flower data set_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Iris_flower_data_set>> [Accessed April, 2021].
+- _Iris (plant)_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Iris_(plant)>> [Accessed April, 2021].
+- _Linear discriminant analysis_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Linear_discriminant_analysis>> [Accessed April, 2021].
+- _Machine learning_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Machine_learning>> [Accessed April, 2021].
+- _matplotlib.pyplot.scatter()_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/>> [Accessed April, 2021].
+- _Matplotlib Histograms_. w3schools. Available at: <<https://www.w3schools.com/python/matplotlib_histograms.asp>> [Accessed April, 2021].
+- _Matplotlib scatterplot_. Pythonspot. Available at: <<https://pythonspot.com/matplotlib-scatterplot/>> [Accessed April, 2021].
+- _Matplotlib Scatter_. w3schools. Available at: <<https://www.w3schools.com/python/matplotlib_scatter.asp>> [Accessed April, 2021].
+- O'Leary, N. (2019), _Project-2019_. GitHub. Available at: <<https://github.com/NiamhOL/Project-2019>> [Accessed April, 2021].
+- _Options and settings_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html>> [Accessed April, 2021].
+- _pandas.DataFrame.describe_. Pydata. Available at: <<https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html>> [Accessed April, 2021].
+- _pandas.DataFrame.head_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html>> [Accessed April, 2021].
+- _pandas.DataFrame.shape_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html>> [Accessed April, 2021].
+- _pandas.DataFrame.tail_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html>> [Accessed April, 2021].
+- _pandas.plotting.scatter matrix_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html>> [Accessed April, 2021].
+- _pandas.Series.value counts_. Pydata. Available at: <<https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html>> [Accessed April, 2021].
 - Parker, K. (2020), _Data Analysis in python: Getting started with pandas_. Towardsdatascience. Available at: <<https://towardsdatascience.com/data-analysis-in-python-getting-started-with-pandas-8cbcc1500c83>> [Accessed April, 2021].
 - _Petal_. Wikipedia. Available at: <<https://en.wikipedia.org/wiki/Petal>> [Accessed April, 2021].
 - _Plotting Histogram in Python using Matplotlib_, (2020). Geeksforgeeks. Available at: <<https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/>> [Accessed April, 2021].
